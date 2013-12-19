@@ -1,0 +1,10 @@
+2013-11-03 23:46:51 - INFO --> -------------------------- 
+2013-11-03 23:46:51 - INFO --> Controller/Method: users/p_signup 
+2013-11-03 23:46:51 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY contact@p2.harvardextension.biz 
+2013-11-03 23:46:51 - INFO --> From: Woof Woof Woof (contact@p2.harvardextension.biz) 
+2013-11-03 23:46:51 - INFO --> To: Edward Chik (edward.chik@gmail.com),  
+2013-11-03 23:46:51 - INFO --> CC:  
+2013-11-03 23:46:51 - INFO --> BCC:  
+2013-11-03 23:46:51 - INFO --> Subject: Welcome to Woof Woof Woof! 
+2013-11-03 23:46:51 - INFO --> Body: Hi Edward Chik, this is just a message to confirm your registration at Woof Woof Woof. Now that you have signed up, get ready to woof with your friends! 
+2013-11-03 23:46:51 - INFO --> FAILED TO SEND EMAIL 

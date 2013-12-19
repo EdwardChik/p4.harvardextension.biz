@@ -1,0 +1,107 @@
+// variable declarations
+@background: #F5F5F5;
+@font_size: 1em;
+@padding: 1em;
+
+// mixins
+.margins {
+	margin-left: auto;
+	margin-right: auto;    
+}
+
+.emphasize {
+	font-weight: bold;
+    &:hover {
+    	text-decoration: none;
+    }
+}
+
+.fonts {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+// regular
+body {
+	background-color: @background;
+	color: black;
+	font-size: @font_size;
+	padding-top: @padding * 4;
+    .fonts;
+	.margins;
+}
+
+// navigation bar
+.clearfix {
+	clear: both;
+}
+
+h2 {
+	font-size: @font_size * 1.3;
+}
+
+a {
+	text-decoration: none;
+    &:hover {
+    	text-decoration: underline;
+    }
+}
+
+
+// other styles
+img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	.margins;
+}
+
+figcaption {
+	text-align: center;
+	.emphasize;
+	.margins;
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+// Bootstrap customization
+.glyphicon {
+    font-size: @font_size * 0.75;
+    text-decoration: none;
+}
+
+.alert {
+    font-weight: bold;
+}
+
+.tooltip {
+    .tooltip-inner {
+        background-color: #DCEEF5;
+        color: #000000;
+    }
+}
+
+.breadcrumb {
+    font-weight: bold;
+}
+
+footer {
+	background-color: @background;
+	color: #8595A6;
+	font-size: @font_size;
+	padding: @padding;
+	text-align: center;
+	clear: both;
+    ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;	
+    }
+}

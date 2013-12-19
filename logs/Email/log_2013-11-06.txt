@@ -1,0 +1,210 @@
+2013-11-06 0:02:31 - INFO --> -------------------------- 
+2013-11-06 0:02:31 - INFO --> Controller/Method: users/p_profile_edit 
+2013-11-06 0:02:32 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:02:32 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:02:32 - INFO --> CC:  
+2013-11-06 0:02:32 - INFO --> BCC:  
+2013-11-06 0:02:32 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:02:32 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Town of Testing', biography = 'This is another test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to  
+2013-11-06 0:02:32 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:04:12 - INFO --> -------------------------- 
+2013-11-06 0:04:12 - INFO --> Controller/Method: users/p_profile_edit 
+2013-11-06 0:04:12 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:04:12 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:04:12 - INFO --> CC:  
+2013-11-06 0:04:12 - INFO --> BCC:  
+2013-11-06 0:04:12 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:04:12 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Town of Testing', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use ne 
+2013-11-06 0:04:12 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:04:17 - INFO --> -------------------------- 
+2013-11-06 0:04:17 - INFO --> Controller/Method: users/p_profile_edit 
+2013-11-06 0:04:17 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:04:17 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:04:17 - INFO --> CC:  
+2013-11-06 0:04:17 - INFO --> BCC:  
+2013-11-06 0:04:17 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:04:17 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''  
+2013-11-06 0:04:17 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:05:11 - INFO --> -------------------------- 
+2013-11-06 0:05:11 - INFO --> Controller/Method: users/p_profile_edit 
+2013-11-06 0:05:11 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:05:11 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:05:11 - INFO --> CC:  
+2013-11-06 0:05:11 - INFO --> BCC:  
+2013-11-06 0:05:11 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:05:11 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Town of Testing', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use ne 
+2013-11-06 0:05:11 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:07:04 - INFO --> -------------------------- 
+2013-11-06 0:07:04 - INFO --> Controller/Method: users/p_profile_edit 
+2013-11-06 0:07:04 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:07:04 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:07:04 - INFO --> CC:  
+2013-11-06 0:07:04 - INFO --> BCC:  
+2013-11-06 0:07:04 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:07:04 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''  
+2013-11-06 0:07:04 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:09:40 - INFO --> -------------------------- 
+2013-11-06 0:09:40 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:09:40 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:09:40 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:09:40 - INFO --> CC:  
+2013-11-06 0:09:40 - INFO --> BCC:  
+2013-11-06 0:09:40 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:09:40 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Town of Testing', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use ne 
+2013-11-06 0:09:40 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:38:51 - INFO --> -------------------------- 
+2013-11-06 0:38:51 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:38:51 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:38:51 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:38:51 - INFO --> CC:  
+2013-11-06 0:38:51 - INFO --> BCC:  
+2013-11-06 0:38:51 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:38:51 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''  
+2013-11-06 0:38:51 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:40:36 - INFO --> -------------------------- 
+2013-11-06 0:40:36 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:40:36 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:40:36 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:40:36 - INFO --> CC:  
+2013-11-06 0:40:36 - INFO --> BCC:  
+2013-11-06 0:40:36 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:40:36 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''  
+2013-11-06 0:40:36 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:43:24 - INFO --> -------------------------- 
+2013-11-06 0:43:24 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:43:24 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:43:24 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:43:24 - INFO --> CC:  
+2013-11-06 0:43:24 - INFO --> BCC:  
+2013-11-06 0:43:24 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:43:24 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET modified = NULL, first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''  
+2013-11-06 0:43:24 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:50:22 - INFO --> -------------------------- 
+2013-11-06 0:50:22 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:50:22 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:50:22 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:50:22 - INFO --> CC:  
+2013-11-06 0:50:22 - INFO --> BCC:  
+2013-11-06 0:50:22 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:50:22 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is another test.', user = '4' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' 
+2013-11-06 0:50:22 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 0:57:54 - INFO --> -------------------------- 
+2013-11-06 0:57:54 - INFO --> Controller/Method: users/profile_edit 
+2013-11-06 0:57:54 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 0:57:54 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 0:57:54 - INFO --> CC:  
+2013-11-06 0:57:54 - INFO --> BCC:  
+2013-11-06 0:57:54 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 0:57:54 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET first_name = 'Mr', last_name = 'Test', location = 'Test Town', biography = 'This is a test.', user = '4' WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at li 
+2013-11-06 0:57:54 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 1:20:10 - INFO --> -------------------------- 
+2013-11-06 1:20:10 - INFO --> Controller/Method: posts/follow 
+2013-11-06 1:20:10 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 1:20:10 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 1:20:10 - INFO --> CC:  
+2013-11-06 1:20:10 - INFO --> BCC:  
+2013-11-06 1:20:10 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 1:20:10 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET follower_total = NULL WHERE user_id = Array Unknown column 'Array' in 'where clause'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'eeb9be62b549a02a44a4703a6d22987a776a97db'
+					LIMIT 1<br>1 = INSERT INTO users_users SET created = '13837188 
+2013-11-06 1:20:10 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 1:21:06 - INFO --> -------------------------- 
+2013-11-06 1:21:06 - INFO --> Controller/Method: posts/follow 
+2013-11-06 1:21:06 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 1:21:06 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 1:21:06 - INFO --> CC:  
+2013-11-06 1:21:06 - INFO --> BCC:  
+2013-11-06 1:21:06 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 1:21:06 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET follower_total = NULL WHERE user_id = Array Unknown column 'Array' in 'where clause'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'eeb9be62b549a02a44a4703a6d22987a776a97db'
+					LIMIT 1<br>1 = INSERT INTO users_users SET created = '13837188 
+2013-11-06 1:21:06 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 1:43:48 - INFO --> -------------------------- 
+2013-11-06 1:43:48 - INFO --> Controller/Method: users/p_signup_verify 
+2013-11-06 1:43:48 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 1:43:48 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 1:43:48 - INFO --> CC:  
+2013-11-06 1:43:48 - INFO --> BCC:  
+2013-11-06 1:43:48 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 1:43:48 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET status = 'active' WHERE user_id = Array Unknown column 'Array' in 'where clause'<h2>Query History</h2>0 = SELECT user_id
+            FROM users
+            WHERE email_verify = '43a839e0a844c47ddf403603f138dafce72ccb55'<br>1 = UPDATE users SET status = 'active'  
+2013-11-06 1:43:48 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 1:44:57 - INFO --> -------------------------- 
+2013-11-06 1:44:57 - INFO --> Controller/Method: users/p_signup_verify 
+2013-11-06 1:44:57 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 1:44:57 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 1:44:57 - INFO --> CC:  
+2013-11-06 1:44:57 - INFO --> BCC:  
+2013-11-06 1:44:57 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 1:44:57 - INFO --> Body: <h2>SQL Error</h2> SELECT user_id
+            FROM users
+            WHERE email_verify = 43a839e0a844c47ddf403603f138dafce72ccb55 Unknown column '43a839e0a844c47ddf403603f138dafce72ccb55' in 'where clause'<h2>Query History</h2>0 = SELECT user_id
+            FROM users
+            WHERE email_ve 
+2013-11-06 1:44:57 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 1:48:53 - INFO --> -------------------------- 
+2013-11-06 1:48:53 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 1:48:53 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 1:48:53 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 1:48:53 - INFO --> CC:  
+2013-11-06 1:48:53 - INFO --> BCC:  
+2013-11-06 1:48:53 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 1:48:53 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO users SET first_name = '', last_name = '', email = '', location = '', biography = '', password = '84802489959df1bc7124a1a492192d518c1c49db', submitted = '1', created = '1383720533', modified = '1383720533', token = '862d372403dab52c5e00482169a5d901770405cf', email_veri 
+2013-11-06 1:48:53 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 3:07:43 - INFO --> -------------------------- 
+2013-11-06 3:07:43 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 3:07:43 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 3:07:43 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 3:07:43 - INFO --> CC:  
+2013-11-06 3:07:43 - INFO --> BCC:  
+2013-11-06 3:07:43 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 3:07:43 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO users SET first_name = 'no', last_name = '', email = '', location = '', biography = '', password = '84802489959df1bc7124a1a492192d518c1c49db', submitted = '1', created = '1383725263', modified = '1383725263', token = '2fe7a699e2a9603d29b875774508ea6122492466', email_ve 
+2013-11-06 3:07:43 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 4:34:06 - INFO --> -------------------------- 
+2013-11-06 4:34:06 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 4:34:06 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 4:34:06 - INFO --> To: Mr Bean (mr@bean.com),  
+2013-11-06 4:34:06 - INFO --> CC:  
+2013-11-06 4:34:06 - INFO --> BCC:  
+2013-11-06 4:34:06 - INFO --> Subject: Welcome to Woof Woof Woof! 
+2013-11-06 4:34:06 - INFO --> Body: Hi Mr Bean, this is just a message to confirm your registration at Woof Woof Woof. Now that you have signed up, you're almost ready to woof with your friends! Your verification code is: ea563cdd2c85f94adb437bcb94251b8ec64ae565 
+2013-11-06 4:34:06 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 4:42:58 - INFO --> -------------------------- 
+2013-11-06 4:42:58 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 4:42:58 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 4:42:58 - INFO --> To: Sherlock Holmes (contact@sherlock.com),  
+2013-11-06 4:42:58 - INFO --> CC:  
+2013-11-06 4:42:58 - INFO --> BCC:  
+2013-11-06 4:42:58 - INFO --> Subject: Welcome to Woof Woof Woof! 
+2013-11-06 4:42:58 - INFO --> Body: Hi Sherlock Holmes, this is just a message to confirm your registration at Woof Woof Woof. Now that you have signed up, you're almost ready to woof with your friends! Your verification code is: 07f59cca6af0110850f3b0866889556526f71f38 
+2013-11-06 4:42:58 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 4:48:03 - INFO --> -------------------------- 
+2013-11-06 4:48:03 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 4:48:03 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 4:48:03 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 4:48:03 - INFO --> CC:  
+2013-11-06 4:48:03 - INFO --> BCC:  
+2013-11-06 4:48:03 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 4:48:03 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO users_users SET created = '1383731283', user_id = '', user_id_followed = '17' Cannot add or update a child row: a foreign key constraint fails (`harvarde_p2_harvardextension_biz`.`users_users`, CONSTRAINT `users_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users`  
+2013-11-06 4:48:03 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 4:55:02 - INFO --> -------------------------- 
+2013-11-06 4:55:02 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 4:55:02 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 4:55:02 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-11-06 4:55:02 - INFO --> CC:  
+2013-11-06 4:55:02 - INFO --> BCC:  
+2013-11-06 4:55:02 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-11-06 4:55:02 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO users_users SET created = '1383731701', user_id = '', user_id_followed = '18' Cannot add or update a child row: a foreign key constraint fails (`harvarde_p2_harvardextension_biz`.`users_users`, CONSTRAINT `users_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users`  
+2013-11-06 4:55:02 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 4:56:03 - INFO --> -------------------------- 
+2013-11-06 4:56:03 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 4:56:03 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-11-06 4:56:03 - INFO --> To: Optimus Prime (optimus@transformers.com),  
+2013-11-06 4:56:03 - INFO --> CC:  
+2013-11-06 4:56:03 - INFO --> BCC:  
+2013-11-06 4:56:03 - INFO --> Subject: Welcome to Woof Woof Woof! 
+2013-11-06 4:56:03 - INFO --> Body: Hi Optimus Prime, this is just a message to confirm your registration at Woof Woof Woof. Now that you have signed up, you're almost ready to woof with your friends! Your verification code is: 9f4d03759387699510c0997ad3ccb9f31e89eb2b 
+2013-11-06 4:56:03 - INFO --> FAILED TO SEND EMAIL 

@@ -1,0 +1,9 @@
+2013-11-05 18:12:12 - INFO --> -------------------------- 
+2013-11-05 18:12:12 - INFO --> Controller/Method: users/p_signup 
+2013-11-05 18:12:12 - INFO --> From: Woof Woof Woof (contact@p2.harvardextension.biz) 
+2013-11-05 18:12:12 - INFO --> To: Grey Ghost (grey@ghost.com),  
+2013-11-05 18:12:12 - INFO --> CC:  
+2013-11-05 18:12:12 - INFO --> BCC:  
+2013-11-05 18:12:12 - INFO --> Subject: Welcome to Woof Woof Woof! 
+2013-11-05 18:12:12 - INFO --> Body: Hi Grey Ghost, this is just a message to confirm your registration at Woof Woof Woof. Now that you have signed up, you're almost ready to woof with your friends! Your verification code is: 43a839e0a844c47ddf403603f138dafce72ccb55 
+2013-11-05 18:12:12 - INFO --> FAILED TO SEND EMAIL 
