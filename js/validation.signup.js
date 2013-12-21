@@ -5,13 +5,13 @@ $(document).ready(function(){
   		$('#first_name').focusout(function(){
 
   			if($('#first_name').val().length == 0) {
-  				$('.name-group .help-block').text('Please enter your first name.');
-  				$('.name-group').attr({
+  				$('.first-name-group .help-block').text('Please enter your first name.');
+  				$('.first-name-group').attr({
   					class: 'has-error col-sm-4 form-group first-name-group'
   				}); //end attr
   			} else {
-  				$('.name-group .help-block').text('');
-  				$('.name-group').attr({
+  				$('.first-name-group .help-block').text('');
+  				$('.first-name-group').attr({
   					class: 'col-sm-4 form-group first-name-group'
   				}); //end attr
   			}
@@ -23,13 +23,13 @@ $(document).ready(function(){
         $('#last_name').focusout(function(){
 
           if($('#last_name').val().length == 0) {
-            $('.name-group .help-block').text('Please enter your last name.');
-            $('.name-group').attr({
+            $('.last-name-group .help-block').text('Please enter your last name.');
+            $('.last-name-group').attr({
               class: 'has-error col-sm-4 form-group last-name-group'
             }); //end attr
           } else {
-            $('.name-group .help-block').text('');
-            $('.name-group').attr({
+            $('.last-name-group .help-block').text('');
+            $('.last-name-group').attr({
               class: 'col-sm-4 form-group last-name-group'
             }); //end attr
           }
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 
   // highlights e-mail address field if it is left empty
-  		$('#email').focusout(function(){
+  		$('#email_address').focusout(function(){
 
   			if($('#email_address').val().length == 0) {
   				$('.email-group .help-block').text('Please enter your e-mail address.');
