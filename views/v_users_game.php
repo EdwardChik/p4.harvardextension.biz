@@ -55,7 +55,7 @@
 					<h3>Mario</h3>
 					<p>Brother of Luigi, plumber and defender of the Mushroom Kingdom!</p>
 
-					<button type="button" class="btn btn-primary" id="select-mario">This song is Mario!</button>
+					<button type="button" class="btn btn-primary" id="select-mario">It's Mario!</button>
 				</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 					<h3>Link</h3>
 					<p>The hero of Hyrule, foe of Ganon and the waker of winds!</p>
 
-					<button type="button" class="btn btn-primary" id="select-link">This song is Link!</button>
+					<button type="button" class="btn btn-primary" id="select-link">It's Link!</button>
 				</div>
 			</div>
 		</div>
@@ -81,7 +81,7 @@
 					<h3>Samus Aran</h3>
 					<p>Feared bounty hunter, mortal enemy of brains on mechanical legs.</p>
 
-					<button type="button" class="btn btn-primary" id="select-samus">This song is Samus!</button>
+					<button type="button" class="btn btn-primary" id="select-samus">It's Samus!</button>
 				</div>
 			</div>
 		</div>
@@ -94,7 +94,7 @@
 					<h3>Donkey Kong</h3>
 					<p>Not to be confused with Diddy, Dixie, Baby, Cranky, or...</p>
 
-					<button type="button" class="btn btn-primary" id="select-dk">This song is DK!</button>
+					<button type="button" class="btn btn-primary" id="select-dk">It's DK!</button>
 				</div>
 			</div>
 		</div>
@@ -107,7 +107,7 @@
 					<h3>Fox McCloud</h3>
 					<p>How would Falco, Peppy and Slippy get by without their leader?</p>
 
-					<button type="button" class="btn btn-primary" id="select-fox">This song is Fox!</button>
+					<button type="button" class="btn btn-primary" id="select-fox">It's Fox!</button>
 				</div>
 			</div>
 		</div>
