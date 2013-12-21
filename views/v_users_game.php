@@ -11,14 +11,14 @@
 			<!-- main content of jumbotron -->
 			<div class="col-sm-7 col-md-7">
 
-				<h2>What's That Nintendo Song?</h2>
+				<h2>What's That Classic Song?</h2>
 			
-				<p>Let's match up classic Nintendo songs with their characters!</p>
+				<p>Let's match up Nintendo songs with characters!</p>
 
 				<ol>
 					<li>Press Play to listen to the song.</li>
-					<li>Click the button for the character you think the song belongs to.</li>
-					<li>If you want to try again, press the Reboot Game button.</li>
+					<li>Click a character's button to guess.</li>
+					<li>To try again, press Reboot Game.</li>
 				</ol>
 
 			</div>
@@ -53,7 +53,7 @@
 				<img data-src="holder.js/300x300" src="/images/characters/Super_Mario.jpg" alt="It\'s-a me, Mario!">
 				<div class="caption">
 					<h3>Mario</h3>
-					<p>Brother of Luigi, plumber and defender of the Mushroom Kingdom!</p>
+					<p>Brother of Luigi, defender of the Mushroom Kingdom!</p>
 
 					<button type="button" class="btn btn-primary" id="select-mario">It's Mario!</button>
 				</div>
@@ -78,8 +78,8 @@
 			<div class="thumbnail">
 				<img data-src="holder.js/300x300" src="/images/characters/Super_Metroid.jpg" alt="Samus Aran, feared bounty hunter.">
 				<div class="caption">
-					<h3>Samus Aran</h3>
-					<p>Feared bounty hunter, mortal enemy of brains on mechanical legs.</p>
+					<h3>Samus</h3>
+					<p>Feared bounty hunter, mortal enemy of mutant brains.</p>
 
 					<button type="button" class="btn btn-primary" id="select-samus">It's Samus!</button>
 				</div>
@@ -91,8 +91,8 @@
 			<div class="thumbnail">
 				<img data-src="holder.js/300x300" src="/images/characters/Donkey_Kong_Country.jpg" alt="See? Everyone looks better in a tie, even (or especially) apes.">
 				<div class="caption">
-					<h3>Donkey Kong</h3>
-					<p>Not to be confused with Diddy, Dixie, Baby, Cranky, or...</p>
+					<h3>DK</h3>
+					<p>Not to be confused with Diddy, Dixie, Cranky, or...</p>
 
 					<button type="button" class="btn btn-primary" id="select-dk">It's DK!</button>
 				</div>
@@ -104,8 +104,8 @@
 			<div class="thumbnail">
 				<img data-src="holder.js/300x300" src="/images/characters/Star_Fox.jpg" alt="GOOD LUCK, FOX.">
 				<div class="caption">
-					<h3>Fox McCloud</h3>
-					<p>How would Falco, Peppy and Slippy get by without their leader?</p>
+					<h3>Fox</h3>
+					<p>How would Falco, Peppy and Slippy get by without him?</p>
 
 					<button type="button" class="btn btn-primary" id="select-fox">It's Fox!</button>
 				</div>
