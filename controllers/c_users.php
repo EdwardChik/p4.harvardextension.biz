@@ -358,4 +358,50 @@ class users_controller extends base_controller {
         }
     }
 
+    # loads game for players
+    public function game($error = NULL) {
+        # Setup view
+            $this->template->content = View::instance('v_users_game');
+            $this->template->title   = "Match Songs with Classic Games!";
+
+            # Pass data to the view
+            $this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+    }
+
+
+    # loads leaderboard for top scores
+    public function leaderboard($error = NULL) {
+        # Setup view
+            $this->template->content = View::instance('v_users_leaderboard');
+            $this->template->title   = "Classic Games Leaderboard!";
+
+            # Pass data to the view
+            $this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+    }
+
+
+    # posts a new score to the leaderboard
+    public function p_leaderboard() {
+
+        # Associate this post with this user
+        $_POST['user_id']  = $this->user->user_id;
+
+        # Unix timestamp of when this post was created / modified
+        $_POST['created']  = Time::now();
+
+        # Insert
+        # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
+        DB::instance(DB_NAME)->insert('score', $_POST);
+
+        # Send them back
+        Router::redirect("/users/game");
+    }
+
+
 } # end of the class

@@ -3,10 +3,11 @@
 <p>Also, features from the previous messaging framework:</p>
 
 <ol>
+	<li>Improved version of game from P3</li>
+	<li>Leaderboards</li>
+	<li>jQuery validation of form</li>
 	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li>Automatic login after signing up</li>
 </ol>
 
 <p>Also, features from the previous messaging framework:</p>

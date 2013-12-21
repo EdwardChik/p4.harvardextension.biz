@@ -56,6 +56,8 @@
                                     <li><a href="/users/profile"><span class="glyphicon glyphicon-cog"></span> Profile</a></li>
                                     <li><a href="/posts"><span class="glyphicon glyphicon-list"></span> Posts</a></li>
                                     <li><a href="/posts/users"><span class="glyphicon glyphicon-user"></span> Users</a></li>
+                                    <li><a href="/posts/users"><span class="glyphicon glyphicon-user"></span> Game</a></li>
+                                    <li><a href="/posts/users"><span class="glyphicon glyphicon-user"></span> Leaderboard</a></li>
 
                                 <!-- menu for users who are not logged in -->
                                 <?php else: ?>
@@ -77,7 +79,7 @@
             <!--- Woof Woof Woof! logo -->
             <div class="media">
                 <a class="pull-left" href="#">
-                    <img class="media-object" src="/images/logos/woofwoofwoof_logo.png" alt="Logo for Woof Woof Woof!" />
+                    <img class="media-object" src="/images/logos/woofwoofwoof_logo.png" alt="Logo for Classic Game!" />
                 </a>
                 <div class="media-body">
                     <h2 class="media-heading"><?=APP_NAME?></h2>
