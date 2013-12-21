@@ -50,7 +50,7 @@
                 <span class="help-block"></span>
             </div>
 
-            <!-- text field for password -->
+            <!-- password field for password -->
             <div class="col-sm-4 form-group password-group">
                 <label for="password" class="control-label">Password: </label>
                 <input type="password" id="password" class="form-control">
