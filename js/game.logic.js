@@ -195,7 +195,7 @@ $(document).ready(function() {
 	function initializeAudio() {
 
 		// generate audio player with randomly selected audio clip
-		$('#random_song').html('<audio controls><source src="audio/' + series[random] + '.mp3" type="audio/mpeg">Unfortunately, it appears that your browser does not support the audio playback element.</audio>');
+		$('#random_song').html('<audio controls><source src="/audio/' + series[random] + '.mp3" type="audio/mpeg">Unfortunately, it appears that your browser does not support the audio playback element.</audio>');
 
 	} // end audio initialization function
 

@@ -1,7 +1,7 @@
 <p>Welcome<?php if($user) echo ', '.$user->first_name.' '.$user->last_name; ?>! Here is a fun Classic Games experience that I hope you enjoy.</p>
 
 <!-- gaming code -->
-<div class="col-sm-8 col-md-8">
+<div class="col-sm-12 col-md-12">
 
 	<!-- top jumbotron explaining the concept -->
 	<div class="jumbotron">
@@ -26,7 +26,7 @@
 
 			<div class="col-sm-3 col-md-3">
 				<!-- Nintendo logo -->
-				<img src="images\Nintendo Logo.png" alt="Nintendo logo"><br /><br />
+				<img src="/images/characters/Nintendo_Logo.png" alt="Nintendo logo"><br /><br />
 
 				<div id="scoreboard">Hearts Left: 5</div>
 
@@ -50,7 +50,7 @@
 		<!-- image of Mario -->
 		<div class="col-sm-4 col-md-2" id="character-select-mario">
 			<div class="thumbnail">
-				<img data-src="holder.js/300x300" src="images/Super_Mario.jpg" alt="It\'s-a me, Mario!">
+				<img data-src="holder.js/300x300" src="/images/characters/Super_Mario.jpg" alt="It\'s-a me, Mario!">
 				<div class="caption">
 					<h3>Mario</h3>
 					<p>Brother of Luigi, plumber and defender of the Mushroom Kingdom!</p>
@@ -63,7 +63,7 @@
 		<!-- image of Link -->
 		<div class="col-sm-4 col-md-2" id="character-select-link">
 			<div class="thumbnail">
-				<img data-src="holder.js/300x300" src="images/The_Legend_of_Zelda.jpg" alt="HEY! HEY! HEY LINK!">
+				<img data-src="holder.js/300x300" src="/images/characters/The_Legend_of_Zelda.jpg" alt="HEY! HEY! HEY LINK!">
 				<div class="caption">
 					<h3>Link</h3>
 					<p>The hero of Hyrule, foe of Ganon and the waker of winds!</p>
@@ -76,7 +76,7 @@
 		<!-- image of Samus -->
 		<div class="col-sm-4 col-md-2" id="character-select-samus">
 			<div class="thumbnail">
-				<img data-src="holder.js/300x300" src="images/Super_Metroid.jpg" alt="Samus Aran, feared bounty hunter.">
+				<img data-src="holder.js/300x300" src="/images/characters/Super_Metroid.jpg" alt="Samus Aran, feared bounty hunter.">
 				<div class="caption">
 					<h3>Samus Aran</h3>
 					<p>Feared bounty hunter, mortal enemy of brains on mechanical legs.</p>
@@ -89,7 +89,7 @@
 		<!-- image of Donkey Kong -->
 		<div class="col-sm-4 col-md-2" id="character-select-dk">
 			<div class="thumbnail">
-				<img data-src="holder.js/300x300" src="images/Donkey_Kong_Country.jpg" alt="See? Everyone looks better in a tie, even (or especially) apes.">
+				<img data-src="holder.js/300x300" src="/images/characters/Donkey_Kong_Country.jpg" alt="See? Everyone looks better in a tie, even (or especially) apes.">
 				<div class="caption">
 					<h3>Donkey Kong</h3>
 					<p>Not to be confused with Diddy, Dixie, Baby, Cranky, or...</p>
@@ -102,7 +102,7 @@
 		<!-- image of Fox McCloud -->
 		<div class="col-sm-4 col-md-2" id="character-select-fox">
 			<div class="thumbnail">
-				<img data-src="holder.js/300x300" src="images/Star_Fox.jpg" alt="GOOD LUCK, FOX.">
+				<img data-src="holder.js/300x300" src="/images/characters/Star_Fox.jpg" alt="GOOD LUCK, FOX.">
 				<div class="caption">
 					<h3>Fox McCloud</h3>
 					<p>How would Falco, Peppy and Slippy get by without their leader?</p>
