@@ -54,7 +54,7 @@
                                     <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                                     <li><a href="/users/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                                     <li><a href="/users/profile"><span class="glyphicon glyphicon-cog"></span> Profile</a></li>
-                                    <li><a href="/posts"><span class="glyphicon glyphicon-list"></span> Woofs</a></li>
+                                    <li><a href="/posts"><span class="glyphicon glyphicon-list"></span> Posts</a></li>
                                     <li><a href="/posts/users"><span class="glyphicon glyphicon-user"></span> Users</a></li>
 
                                 <!-- menu for users who are not logged in -->
@@ -81,7 +81,7 @@
                 </a>
                 <div class="media-body">
                     <h2 class="media-heading"><?=APP_NAME?></h2>
-                    Welcome to this super awesome messaging app!
+                    Welcome to this awesome gaming and messaging app!
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                 <!-- page footer -->
                 <footer>
                     <!-- details for site -->
-                    <p><?=APP_NAME?> is project #2 for <a href="http://www.dwa15.com" target="_blank">CSCI E-15</a> as part of the <a href="http://www.extension.harvard.edu" target="_blank">Harvard Extension School</a>. The logo was obtained for non-commercial use from <a href="http://jamiesale-cartoonist.com/blog-of-cartoons/free-cartoon-dog-vector-clip-art/" target="_blank">this page</a>.</p>
+                    <p><?=APP_NAME?> is project #4 for <a href="http://www.dwa15.com" target="_blank">CSCI E-15</a> as part of the <a href="http://www.extension.harvard.edu" target="_blank">Harvard Extension School</a>. The logo was obtained for non-commercial use from <a href="http://jamiesale-cartoonist.com/blog-of-cartoons/free-cartoon-dog-vector-clip-art/" target="_blank">this page</a>.</p>
 
                     <!-- copyright for site -->
                     <p>This web page is the copyright of Edward Chik, Fall 2013.</p>
@@ -109,6 +109,9 @@
     <!-- jQuery leveraged by Bootstrap for selected display elements -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
+    <!-- game logic -->
+    <script src="/js/game.logic.js"></script>
 
     <!-- enabling tooltips, an opt-in feature of Bootstrap -->
     <script type="text/javascript">
