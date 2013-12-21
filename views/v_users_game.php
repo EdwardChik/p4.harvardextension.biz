@@ -1,4 +1,4 @@
-<p>Welcome<?php if($user) echo ', '.$user->first_name.' '.$user->last_name; ?>! Here is an overview of what Woof Woof Woof has to offer:</p>
+<p>Welcome<?php if($user) echo ', '.$user->first_name.' '.$user->last_name; ?>! Here is a fun Classic Games experience that I hope you enjoy.</p>
 
 <!-- gaming code -->
 <div class="col-sm-8 col-md-8">

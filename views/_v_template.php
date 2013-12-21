@@ -115,6 +115,10 @@
     <!-- game logic -->
     <script src="/js/game.logic.js"></script>
 
+    <!-- form validation logic -->
+    <script src="/js/validation.signup.js"></script>
+    <script src="/js/validation.post.js"></script>
+
     <!-- enabling tooltips, an opt-in feature of Bootstrap -->
     <script type="text/javascript">
         $('.show_tooltip').tooltip();
