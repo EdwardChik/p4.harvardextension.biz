@@ -14,7 +14,7 @@
 
             <!-- text field for last name -->
             <div class="col-sm-4 form-group last-name-group">
-                <label for="last_name" class="control-label">First Name: </label>
+                <label for="last_name" class="control-label">Last Name: </label>
                 <input type="text" id="last_name" class="form-control">
                 <span class="help-block"></span>
             </div>

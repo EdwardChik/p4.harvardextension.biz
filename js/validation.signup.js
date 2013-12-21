@@ -40,7 +40,7 @@ $(document).ready(function(){
   // highlights e-mail address field if it is left empty
   		$('#email').focusout(function(){
 
-  			if($('#name').val().length == 0) {
+  			if($('#email_address').val().length == 0) {
   				$('.email-group .help-block').text('Please enter your e-mail address.');
   				$('.email-group').attr({
   					class: 'has-error col-sm-4 form-group email-group'
@@ -94,7 +94,7 @@ $(document).ready(function(){
   // highlights password field if it is left empty
       $('#password').focusout(function(){
         
-        if($('#name').val().length == 0) {
+        if($('#password').val().length == 0) {
           $('.password-group .help-block').text('Please enter your password.');
           $('.password-group').attr({
             class: 'has-error col-sm-4 form-group password-group'
