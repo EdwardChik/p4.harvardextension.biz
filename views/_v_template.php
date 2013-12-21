@@ -11,7 +11,14 @@
 
     <!-- Twitter Bootstrap framework (minified) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">    
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- DataTables plugin and stylesheet -->
+    <script type="text/javascript" charset="utf-8" src="/datatables/media/js/jquery.dataTables.js"></script>
+
+    <style type="text/css" title="currentStyle">
+        @import "/datatables/media/css/demo_table.css";
+    </style>
 	
 </head>
 
