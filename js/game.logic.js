@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 	// initializes scoreboard
-	var scoreboard;
+	var scoreboard = 100;
 
 	// create an array of base series string values
 	var series = [];
@@ -46,8 +46,6 @@ $(document).ready(function() {
 
 			$('#select-mario').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-mario" disabled="disabled">' + message + '</button>');
 
-			alert(clicked['mario']);
-
 			if (clicked['mario'] == "wrong") {
 				$("#character-select-mario").delay(1000).slideUp("slow");
 			}
@@ -71,8 +69,6 @@ $(document).ready(function() {
   			}
 
 			$('#select-link').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-link" disabled="disabled">' + message + '</button>');
-
-			alert(clicked['link']);
 
 			if (clicked['link'] == "wrong") {
 				$("#character-select-link").delay(1000).slideUp("slow");
@@ -98,8 +94,6 @@ $(document).ready(function() {
 
 			$('#select-samus').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-samus" disabled="disabled">' + message + '</button>');
 
-			alert(clicked['samus']);
-
 			if (clicked['samus'] == "wrong") {
 				$("#character-select-samus").delay(1000).slideUp("slow");
 			}
@@ -124,8 +118,6 @@ $(document).ready(function() {
 
 			$('#select-dk').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-dk" disabled="disabled">' + message + '</button>');
 
-			alert(clicked['dk']);
-
 			if (clicked['dk'] == "wrong") {
 				$("#character-select-dk").delay(1000).slideUp("slow");
 			}
@@ -149,8 +141,6 @@ $(document).ready(function() {
   			}
 
 			$('#select-fox').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-fox" disabled="disabled">' + message + '</button>');
-
-			alert(clicked['fox']);
 
 			if (clicked['fox'] == "wrong") {
 				$("#character-select-fox").delay(1000).slideUp("slow");
@@ -233,8 +223,18 @@ $(document).ready(function() {
 
 		scoreboard = scoreboard - 20;
 
+		var bar_type = "info";
+
+		if (scoreboard == 80) {
+			bar_type = "success";
+		} else if (scoreboard == 60) {
+			bar_type = "warning";
+		} else {
+			bar_type = "danger";
+		}
+
 		// updates scoreboard element
-		$('#scoreboard').replaceWith('<div id="scoreboard">Hearts: ' + scoreboard + '</div>');
+		$('#health_bar').replaceWith('<div class="progress-bar progress-bar-' + bar_type + '" role="progressbar" aria-valuenow="' + scoreboard + '"aria-valuemin="0" aria-valuemax="100" style="width: ' + scoreboard + '%" id="health_bar"><span class="sr-only">' + scoreboard + '% Health</span></div>');
 
 	} // end decrease score function
 
