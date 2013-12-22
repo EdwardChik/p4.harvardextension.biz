@@ -33,7 +33,7 @@ class users_controller extends base_controller {
 
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
-            $email_ = $_POST['email'];
+            $email_ = $_POST['email_address'];
             $location = $_POST['location'];
             $biography = $_POST['biography'];
             $password = $_POST['password'];
@@ -54,7 +54,7 @@ class users_controller extends base_controller {
                 $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);            
 
                 # Create an encrypted token via their email address and a random string
-                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email_address'].Utils::generate_random_string());
 
                 # Create an encrypted verification token via their email address and a random string
                 # $_POST['email_verify'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
@@ -184,14 +184,14 @@ class users_controller extends base_controller {
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
         # Hash submitted password so we can compare it against one in the db
-        $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+        $_POST['login_password'] = sha1(PASSWORD_SALT.$_POST['login_password']);
 
         # Search the db for this email and password
         # Retrieve the token if it's available
         $q = "SELECT token
             FROM users 
-            WHERE email = '".$_POST['email']."' 
-            AND password = '".$_POST['password']."'";
+            WHERE email = '".$_POST['login_email']."' 
+            AND password = '".$_POST['login_password']."'";
 
         $token = DB::instance(DB_NAME)->select_field($q);
 
@@ -208,8 +208,8 @@ class users_controller extends base_controller {
 
             $status = "SELECT status
                 FROM users 
-                WHERE email = '".$_POST['email']."' 
-                AND password = '".$_POST['password']."'";
+                WHERE email = '".$_POST['login_email']."' 
+                AND password = '".$_POST['login_password']."'";
 
             # if a match for the token is found
             if($status == 'pending') {
@@ -234,8 +234,8 @@ class users_controller extends base_controller {
                 # locates user_id for row in users that matched authorization token
                 $user = "SELECT user_id
                     FROM users 
-                    WHERE email = '".$_POST['email']."' 
-                    AND password = '".$_POST['password']."'";
+                    WHERE email = '".$_POST['login_email']."' 
+                    AND password = '".$_POST['login_password']."'";
 
                 $user_id = DB::instance(DB_NAME)->select_field($user);    
 
