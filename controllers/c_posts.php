@@ -24,13 +24,13 @@ class posts_controller extends base_controller {
     # processes adding of new post, including instantiating data values for fields not specified by the user such as timestamps
     public function p_add() {
 
-        $new_post = $_POST['new_post'];
+        $new_post = $_POST['content'];
 
         # validation of form completion
         if(!$new_post) {
 
             # Send user back to the posts page
-            Router::redirect("/posts/add/error");
+            Router::redirect("/posts/index/error");
 
         } else {
 
@@ -40,6 +40,8 @@ class posts_controller extends base_controller {
             # Unix timestamp of when this post was created / modified
             $_POST['created']  = Time::now();
             $_POST['modified'] = Time::now();
+
+            file_put_contents('debug.txt', print_r($_POST));
 
             # Insert
             # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us

@@ -6,7 +6,7 @@
 	    <!-- textarea field for new post -->
 	    <div class="col-sm-6 form-group new-post-group">
 	        <label for="new_post" class="control-label">Write a New Woof:</label>
-	        <input type="textarea" id="new_post" class="form-control" name="new_post">
+	        <input type="textarea" id="content" class="form-control" name="content">
 	        <span class="help-block"></span>
 	    </div>
 

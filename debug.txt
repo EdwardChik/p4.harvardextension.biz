@@ -1,9 +1,1 @@
-Array
-(
-    [first_name] => testing2
-    [last_name] => testing2
-    [email] => testing2@testing2.com
-    [location] => testing2
-    [biography] => testing2
-    [password] => testing2
-)
+1

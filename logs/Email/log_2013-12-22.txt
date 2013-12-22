@@ -21,3 +21,135 @@
 					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
 					LIMIT 1<br>1 = IN 
 2013-12-22 9:48:32 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 9:50:50 - INFO --> -------------------------- 
+2013-12-22 9:50:50 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 9:50:50 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 9:50:50 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 9:50:50 - INFO --> CC:  
+2013-12-22 9:50:50 - INFO --> BCC:  
+2013-12-22 9:50:50 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 9:50:50 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387723850', modified = '1387723850' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 9:50:50 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:35:05 - INFO --> -------------------------- 
+2013-12-22 15:35:05 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:35:05 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:35:05 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:35:05 - INFO --> CC:  
+2013-12-22 15:35:05 - INFO --> BCC:  
+2013-12-22 15:35:05 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:35:05 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744504', modified = '1387744504' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:35:05 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:36:50 - INFO --> -------------------------- 
+2013-12-22 15:36:50 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:36:50 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:36:50 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:36:50 - INFO --> CC:  
+2013-12-22 15:36:50 - INFO --> BCC:  
+2013-12-22 15:36:50 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:36:50 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744610', modified = '1387744610' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:36:50 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:38:06 - INFO --> -------------------------- 
+2013-12-22 15:38:06 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:38:06 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:38:06 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:38:06 - INFO --> CC:  
+2013-12-22 15:38:06 - INFO --> BCC:  
+2013-12-22 15:38:06 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:38:06 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744686', modified = '1387744686' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:38:06 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:38:55 - INFO --> -------------------------- 
+2013-12-22 15:38:55 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:38:55 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:38:55 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:38:55 - INFO --> CC:  
+2013-12-22 15:38:55 - INFO --> BCC:  
+2013-12-22 15:38:55 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:38:55 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744735', modified = '1387744735' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:38:55 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:39:15 - INFO --> -------------------------- 
+2013-12-22 15:39:15 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:39:15 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:39:15 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:39:15 - INFO --> CC:  
+2013-12-22 15:39:15 - INFO --> BCC:  
+2013-12-22 15:39:15 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:39:15 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744755', modified = '1387744755' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:39:15 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:39:19 - INFO --> -------------------------- 
+2013-12-22 15:39:19 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:39:19 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:39:19 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:39:19 - INFO --> CC:  
+2013-12-22 15:39:19 - INFO --> BCC:  
+2013-12-22 15:39:19 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:39:19 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo!', user_id = '21', created = '1387744759', modified = '1387744759' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INS 
+2013-12-22 15:39:19 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:39:45 - INFO --> -------------------------- 
+2013-12-22 15:39:45 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:39:45 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:39:45 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:39:45 - INFO --> CC:  
+2013-12-22 15:39:45 - INFO --> BCC:  
+2013-12-22 15:39:45 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:39:45 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = '', user_id = '21', created = '1387744785', modified = '1387744785' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSERT 
+2013-12-22 15:39:45 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:39:50 - INFO --> -------------------------- 
+2013-12-22 15:39:50 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:39:50 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:39:50 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:39:50 - INFO --> CC:  
+2013-12-22 15:39:50 - INFO --> BCC:  
+2013-12-22 15:39:50 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:39:50 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = '', user_id = '21', created = '1387744790', modified = '1387744790' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSERT 
+2013-12-22 15:39:50 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:41:09 - INFO --> -------------------------- 
+2013-12-22 15:41:09 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:41:09 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:41:09 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:41:09 - INFO --> CC:  
+2013-12-22 15:41:09 - INFO --> BCC:  
+2013-12-22 15:41:09 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:41:09 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744869', modified = '1387744869' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:41:09 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 15:41:25 - INFO --> -------------------------- 
+2013-12-22 15:41:25 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 15:41:25 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 15:41:25 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 15:41:25 - INFO --> CC:  
+2013-12-22 15:41:25 - INFO --> BCC:  
+2013-12-22 15:41:25 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 15:41:25 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'yo', user_id = '21', created = '1387744885', modified = '1387744885' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = INSE 
+2013-12-22 15:41:25 - INFO --> FAILED TO SEND EMAIL 
