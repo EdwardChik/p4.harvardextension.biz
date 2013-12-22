@@ -17,23 +17,22 @@
             <span class="help-block"></span>
         </div>
 
+    </div>
+
+    <div class="row extra-space-bottom">
+
         <div class="col-sm-2 form-group">
             <button type="submit" class="btn btn-default navbar-btn">Log in!</button>
         </div>
 
     </div>
 
-
+    <!-- displays a message if there is an error in the login process -->
     <?php if(isset($error)): ?>
         <div class='error'>
-            Login failed. Please double check your email and password. <!-- To reset your password, please click <a href='/users/reset'>here</a>.-->
+            Login failed. Please double check your email and password.
         </div>
         <br>
     <?php endif; ?>
-
-
-    <!-- 95% built, come back to this when e-mail is working
-    <br><br>
-    Forgot your password? <a href='/users/reset'>Click here</a> to reset it. -->
 
 </form>

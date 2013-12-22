@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
   // highlights login e-mail if it is left empty
-  		$('login_email').focusout(function(){
+  		$('#login_email').focusout(function(){
 
   			if($('#login_email').val().length == 0) {
   				$('.login-email-group .help-block').text('Please enter your e-mail.');
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
   // highlights login password if it is left empty
-      $('login_password').focusout(function(){
+      $('#login_password').focusout(function(){
 
         if($('#login_password').val().length == 0) {
           $('.login-password-group .help-block').text('Please enter your password.');

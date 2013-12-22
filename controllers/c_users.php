@@ -307,15 +307,30 @@ class users_controller extends base_controller {
         # Sanitize the user entered data to prevent any funny-business (re: SQL Injection Attacks)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
-        # store current time
-        $_POST['modified'] = Time::now();
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $location = $_POST['location'];
+        $biography = $_POST['biography'];
 
-        # Update this profile
-        $where_condition = 'WHERE user_id = '.$_POST['user_id'];
-        $update = DB::instance(DB_NAME)->update_row('users', $_POST, $where_condition);
+        # validation of form completion
+        if(!$first_name || !$last_name || !$location || !$biography) {
 
-        # Send them back
-        Router::redirect("/users/profile");
+            # Send user back to the profile page
+            Router::redirect("/users/profile/error");
+
+        } else {
+
+            # store current time
+            $_POST['modified'] = Time::now();
+
+            # Update this profile
+            $where_condition = 'WHERE user_id = '.$_POST['user_id'];
+            $update = DB::instance(DB_NAME)->update_row('users', $_POST, $where_condition);
+
+            # Send them back
+            Router::redirect("/users/profile");
+        }
+
     }
 
 

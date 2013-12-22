@@ -63,8 +63,8 @@
                                     <li><a href="/users/profile"><span class="glyphicon glyphicon-cog"></span> Profile</a></li>
                                     <li><a href="/posts"><span class="glyphicon glyphicon-list"></span> Posts</a></li>
                                     <li><a href="/posts/users"><span class="glyphicon glyphicon-user"></span> Users</a></li>
-                                    <li><a href="/users/game"><span class="glyphicon glyphicon-user"></span> Game</a></li>
-                                    <li><a href="/users/leaderboard"><span class="glyphicon glyphicon-user"></span> Leaderboard</a></li>
+                                    <li><a href="/users/game"><span class="glyphicon glyphicon-tower"></span> Game</a></li>
+                                    <li><a href="/users/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboard</a></li>
 
                                 <!-- menu for users who are not logged in -->
                                 <?php else: ?>

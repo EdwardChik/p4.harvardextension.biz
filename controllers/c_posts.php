@@ -24,27 +24,38 @@ class posts_controller extends base_controller {
     # processes adding of new post, including instantiating data values for fields not specified by the user such as timestamps
     public function p_add() {
 
-        # Associate this post with this user
-        $_POST['user_id']  = $this->user->user_id;
+        $new_post = $_POST['new_post'];
 
-        # Unix timestamp of when this post was created / modified
-        $_POST['created']  = Time::now();
-        $_POST['modified'] = Time::now();
+        # validation of form completion
+        if(!$new_post) {
 
-        # Insert
-        # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
-        DB::instance(DB_NAME)->insert('posts', $_POST);
+            # Send user back to the posts page
+            Router::redirect("/posts/add/error");
 
-        # increment post total by 1
-        $post_total = $this->user->post_total + 1;
+        } else {
 
-        $where_condition = 'WHERE user_id = '.$_POST['user_id'];
+            # Associate this post with this user
+            $_POST['user_id']  = $this->user->user_id;
 
-        # update post total for this user in database
-        DB::instance(DB_NAME)->update_row('users', Array("post_total" => $post_total), $where_condition);
+            # Unix timestamp of when this post was created / modified
+            $_POST['created']  = Time::now();
+            $_POST['modified'] = Time::now();
 
-        # Send them back
-        Router::redirect("/posts");
+            # Insert
+            # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
+            DB::instance(DB_NAME)->insert('posts', $_POST);
+
+            # increment post total by 1
+            $post_total = $this->user->post_total + 1;
+
+            $where_condition = 'WHERE user_id = '.$_POST['user_id'];
+
+            # update post total for this user in database
+            DB::instance(DB_NAME)->update_row('users', Array("post_total" => $post_total), $where_condition);
+
+            # Send them back
+            Router::redirect("/posts");
+        }
     }
 
     # deletes a post
