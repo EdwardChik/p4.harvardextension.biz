@@ -127,6 +127,9 @@
     <script src="/js/validation.login.js"></script>
     <script src="/js/validation.post.js"></script>
 
+    <!-- DataTables call logic -->
+    <script src="/js/datatables.logic.js"></script>
+
     <!-- enabling tooltips, an opt-in feature of Bootstrap -->
     <script type="text/javascript">
         $('.show_tooltip').tooltip();
