@@ -6,14 +6,14 @@
         <div class="row extra-space-bottom">
 
             <!-- text field for first name -->
-            <div class="col-sm-4 form-group first-name-group">
+            <div class="col-sm-6 form-group first-name-group">
                 <label for="first_name" class="control-label">First Name: </label>
                 <input type="text" id="first_name" class="form-control">
                 <span class="help-block"></span>
             </div>
 
             <!-- text field for last name -->
-            <div class="col-sm-4 form-group last-name-group">
+            <div class="col-sm-6 form-group last-name-group">
                 <label for="last_name" class="control-label">Last Name: </label>
                 <input type="text" id="last_name" class="form-control">
                 <span class="help-block"></span>
@@ -25,14 +25,14 @@
         <div class="row extra-space-bottom">
 
             <!-- text field for e-mail address -->
-            <div class="col-sm-4 form-group email-group">
+            <div class="col-sm-6 form-group email-group">
                 <label for="email_address" class="control-label">E-mail Address: </label>
                 <input type="text" id="email_address" class="form-control">
                 <span class="help-block"></span>
             </div>
 
             <!-- text field for location -->
-            <div class="col-sm-4 form-group location-group">
+            <div class="col-sm-6 form-group location-group">
                 <label for="location" class="control-label">Location: </label>
                 <input type="text" id="location" class="form-control">
                 <span class="help-block"></span>
@@ -44,14 +44,14 @@
         <div class="row extra-space-bottom">
 
             <!-- text field for biography -->
-            <div class="col-sm-4 form-group biography-group">
+            <div class="col-sm-6 form-group biography-group">
                 <label for="biography" class="control-label">Biography: </label>
                 <input type="text" id="biography" class="form-control">
                 <span class="help-block"></span>
             </div>
 
             <!-- password field for password -->
-            <div class="col-sm-4 form-group password-group">
+            <div class="col-sm-6 form-group password-group">
                 <label for="password" class="control-label">Password: </label>
                 <input type="password" id="password" class="form-control">
                 <span class="help-block"></span>

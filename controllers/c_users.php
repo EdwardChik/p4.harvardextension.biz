@@ -23,7 +23,7 @@ class users_controller extends base_controller {
         # checks if entered e-mail address already exists in users table
         $q = "SELECT user_id
             FROM users 
-            WHERE email = '".$_POST['email']."'";            
+            WHERE email = '".$_POST['email_address']."'";            
 
         # Sanitizes the user entered data to prevent attacks (such as SQL injection)    
         $user_id = DB::instance(DB_NAME)->select_row($q);
@@ -33,13 +33,13 @@ class users_controller extends base_controller {
 
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
-            $email = $_POST['email'];
+            $email_ = $_POST['email'];
             $location = $_POST['location'];
             $biography = $_POST['biography'];
             $password = $_POST['password'];
 
             # validation of form completion
-            if(!$first_name || !$last_name || !$email || !$location || !$biography || !$password) {
+            if(!$first_name || !$last_name || !$email_address || !$location || !$biography || !$password) {
 
                 # Send user back to the signup page
                 Router::redirect("/users/signup/error");

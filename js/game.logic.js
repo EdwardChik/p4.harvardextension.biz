@@ -46,6 +46,8 @@ $(document).ready(function() {
 
 			$('#select-mario').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-mario" disabled="disabled">' + message + '</button>');
 
+			alert(click['mario']);
+
 			if (click['mario'] == "wrong") {
 				$("#character-select-mario").delay(1000).slideUp("slow");
 			}
@@ -69,6 +71,8 @@ $(document).ready(function() {
   			}
 
 			$('#select-link').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-link" disabled="disabled">' + message + '</button>');
+
+			alert(click['link']);
 
 			if (click['link'] == "wrong") {
 				$("#character-select-link").delay(1000).slideUp("slow");
@@ -94,6 +98,8 @@ $(document).ready(function() {
 
 			$('#select-samus').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-samus" disabled="disabled">' + message + '</button>');
 
+			alert(click['samus']);
+
 			if (click['samus'] == "wrong") {
 				$("#character-select-samus").delay(1000).slideUp("slow");
 			}
@@ -118,6 +124,8 @@ $(document).ready(function() {
 
 			$('#select-dk').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-dk" disabled="disabled">' + message + '</button>');
 
+			alert(click['dk']);
+
 			if (click['dk'] == "wrong") {
 				$("#character-select-dk").delay(1000).slideUp("slow");
 			}
@@ -141,6 +149,8 @@ $(document).ready(function() {
   			}
 
 			$('#select-fox').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-fox" disabled="disabled">' + message + '</button>');
+
+			alert(click['fox']);
 
 			if (click['fox'] == "wrong") {
 				$("#character-select-fox").delay(1000).slideUp("slow");
