@@ -180,6 +180,9 @@ $(document).ready(function() {
 		series[2] = "Samus";
 		series[3] = "DK";
 		series[4] = "Fox";
+		series[5] = "Falcon";
+		series[6] = "Kirby";
+		series[7] = "Ness";
 
 		// creates clicked status array and assigns base values
 		clicked['mario'] = "ready";
@@ -187,6 +190,9 @@ $(document).ready(function() {
 		clicked['samus'] = "ready";
 		clicked['dk'] = "ready";
 		clicked['fox'] = "ready";
+		clicked['falcon'] = "ready";
+		clicked['kirby'] = "ready";
+		clicked['ness'] = "ready";
 
 	} // end initialize game function
 
@@ -221,7 +227,7 @@ $(document).ready(function() {
 	// decreases current score by 1
 	function decreaseScore() {
 
-		scoreboard = scoreboard - 20;
+		scoreboard = scoreboard - 10;
 
 		var bar_type = "info";
 
