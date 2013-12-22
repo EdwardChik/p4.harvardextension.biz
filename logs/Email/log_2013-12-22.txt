@@ -9,3 +9,15 @@
             FROM users 
             WHER 
 2013-12-22 0:02:34 - INFO --> FAILED TO SEND EMAIL 
+2013-12-22 9:48:31 - INFO --> -------------------------- 
+2013-12-22 9:48:31 - INFO --> Controller/Method: posts/p_add 
+2013-12-22 9:48:32 - INFO --> From: Woof Gaming (woofbot5000@gmail.com) 
+2013-12-22 9:48:32 - INFO --> To: Woof Gaming (woofbot5000@gmail.com),  
+2013-12-22 9:48:32 - INFO --> CC:  
+2013-12-22 9:48:32 - INFO --> BCC:  
+2013-12-22 9:48:32 - INFO --> Subject: Woof Gaming SQL Error 
+2013-12-22 9:48:32 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET new_post = 'Yay!', user_id = '21', created = '1387723711', modified = '1387723711' Unknown column 'new_post' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '08e56c9f96a968d3888592e9e3a2a7fa5d719462'
+					LIMIT 1<br>1 = IN 
+2013-12-22 9:48:32 - INFO --> FAILED TO SEND EMAIL 

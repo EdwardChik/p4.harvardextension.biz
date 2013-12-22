@@ -148,11 +148,83 @@ $(document).ready(function() {
 
 		});
 
+		// when Captain Falcon is selected
+		$('#select-falcon').click(function() {
+
+			// sets flags based on match with randomly selected character
+			if (selected == 'Falcon') {
+  				message = "ZOOM!";
+  				button_colour = "success";
+  				clicked['falcon'] = "right";
+				disableButtons();
+  			} else {
+  				message = "Not Falcon.";
+  				button_colour = "danger";
+  				clicked['falcon'] = "wrong";
+  				decreaseScore();
+  			}
+
+			$('#select-falcon').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-falcon" disabled="disabled">' + message + '</button>');
+
+			if (clicked['falcon'] == "wrong") {
+				$("#character-select-falcon").delay(1000).slideUp("slow");
+			}
+
+		});
+
+		// when Kirby is selected
+		$('#select-kirby').click(function() {
+
+			// sets flags based on match with randomly selected character
+			if (selected == 'Kirby') {
+  				message = "YAY!";
+  				button_colour = "success";
+  				clicked['kirby'] = "right";
+				disableButtons();
+  			} else {
+  				message = "Not Kirby.";
+  				button_colour = "danger";
+  				clicked['kirby'] = "wrong";
+  				decreaseScore();
+  			}
+
+			$('#select-kirby').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-kirby" disabled="disabled">' + message + '</button>');
+
+			if (clicked['kirby'] == "wrong") {
+				$("#character-select-kirby").delay(1000).slideUp("slow");
+			}
+
+		});
+
+		// when Ness is selected
+		$('#select-ness').click(function() {
+
+			// sets flags based on match with randomly selected character
+			if (selected == 'Ness') {
+  				message = "We can do this!";
+  				button_colour = "success";
+  				clicked['ness'] = "right";
+				disableButtons();
+  			} else {
+  				message = "Not Ness.";
+  				button_colour = "danger";
+  				clicked['ness'] = "wrong";
+  				decreaseScore();
+  			}
+
+			$('#select-ness').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-ness" disabled="disabled">' + message + '</button>');
+
+			if (clicked['ness'] == "wrong") {
+				$("#character-select-ness").delay(1000).slideUp("slow");
+			}
+
+		});
+
 	// end character click
 
 
 
-	// when reboot button is selected
+	// refreshes game when reboot button is selected
 	$('#reboot-game').click(function() {
 
 		location.reload();
@@ -164,7 +236,7 @@ $(document).ready(function() {
 	function randomPick() {
 
 		// randomly select song + image (integer)
-		random = Math.floor(Math.random()*5);
+		random = Math.floor(Math.random()*8);
 
 	}
 
@@ -231,9 +303,9 @@ $(document).ready(function() {
 
 		var bar_type = "info";
 
-		if (scoreboard == 80) {
+		if (scoreboard == 90 || scoreboard == 80) {
 			bar_type = "success";
-		} else if (scoreboard == 60) {
+		} else if (scoreboard == 70 || scoreboard == 60 || scoreboard == 50) {
 			bar_type = "warning";
 		} else {
 			bar_type = "danger";
