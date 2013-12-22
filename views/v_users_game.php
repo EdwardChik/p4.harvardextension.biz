@@ -53,6 +53,19 @@
 	<!-- Twitter Bootstrap display grids start here --> 
 	<div class="row extra-space-bottom">
 
+<ul class="media-list" id="character-select-mario">
+	<li class="media">
+		<a class="pull-left" href="#">
+			<img data-src="holder.js/64x64" src="/images/characters/Super_Mario.jpg" alt="It\'s-a me, Mario!">
+		</a>
+		<div class="media-body">
+			<h3 class="media-heading">Mario</h3>
+			Brother of Luigi, defender of the Mushroom Kingdom! <button type="button" class="btn btn-primary" id="select-mario">It's Mario!</button>
+		</div>
+
+	</li>
+</ul>
+
 		<!-- image of Mario -->
 		<div class="col-sm-4 col-md-2" id="character-select-mario">
 			<div class="thumbnail">
