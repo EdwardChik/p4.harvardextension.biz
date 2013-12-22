@@ -4,14 +4,14 @@
     <div class="row extra-space-bottom">
 
         <!-- text field for login e-mail -->
-        <div class="col-sm-4 form-group login-email-group">
+        <div class="col-sm-6 form-group login-email-group">
             <label for="login_email" class="control-label">E-mail Address: </label>
             <input type="text" id="login_email" class="form-control">
             <span class="help-block"></span>
         </div>
 
         <!-- text field for login password -->
-        <div class="col-sm-4 form-group login-password-group">
+        <div class="col-sm-6 form-group login-password-group">
             <label for="login_password" class="control-label">Password: </label>
             <input type="password" id="login_password" class="form-control">
             <span class="help-block"></span>

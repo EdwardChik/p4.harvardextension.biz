@@ -7,12 +7,12 @@ $(document).ready(function(){
   			if($('#first_name').val().length == 0) {
   				$('.first-name-group .help-block').text('Please enter your first name.');
   				$('.first-name-group').attr({
-  					class: 'has-error col-sm-4 form-group first-name-group'
+  					class: 'has-error col-sm-6 form-group first-name-group'
   				}); //end attr
   			} else {
   				$('.first-name-group .help-block').text('');
   				$('.first-name-group').attr({
-  					class: 'col-sm-4 form-group first-name-group'
+  					class: 'col-sm-6 form-group first-name-group'
   				}); //end attr
   			}
 
@@ -25,12 +25,12 @@ $(document).ready(function(){
           if($('#last_name').val().length == 0) {
             $('.last-name-group .help-block').text('Please enter your last name.');
             $('.last-name-group').attr({
-              class: 'has-error col-sm-4 form-group last-name-group'
+              class: 'has-error col-sm-6 form-group last-name-group'
             }); //end attr
           } else {
             $('.last-name-group .help-block').text('');
             $('.last-name-group').attr({
-              class: 'col-sm-4 form-group last-name-group'
+              class: 'col-sm-6 form-group last-name-group'
             }); //end attr
           }
 
@@ -43,12 +43,12 @@ $(document).ready(function(){
   			if($('#email_address').val().length == 0) {
   				$('.email-group .help-block').text('Please enter your e-mail address.');
   				$('.email-group').attr({
-  					class: 'has-error col-sm-4 form-group email-group'
+  					class: 'has-error col-sm-6 form-group email-group'
   				}); //end attr
   			} else {
   				$('.email-group .help-block').text('');
   				$('.email-group').attr({
-  					class: 'col-sm-4 form-group email-group'
+  					class: 'col-sm-6 form-group email-group'
   				}); //end attr
   			}
 
@@ -61,12 +61,12 @@ $(document).ready(function(){
         if($('#location').val().length == 0) {
           $('.location-group .help-block').text('Please enter your location.');
           $('.location-group').attr({
-            class: 'has-error col-sm-4 form-group location-group'
+            class: 'has-error col-sm-6 form-group location-group'
           }); //end attr
         } else {
           $('.location-group .help-block').text('');
           $('.location-group').attr({
-            class: 'col-sm-4 form-group location-group'
+            class: 'col-sm-6 form-group location-group'
           }); //end attr
         }
 
@@ -79,12 +79,12 @@ $(document).ready(function(){
         if($('#biography').val().length == 0) {
           $('.biography-group .help-block').text('Please enter your biography.');
           $('.biography-group').attr({
-            class: 'has-error col-sm-4 form-group biography-group'
+            class: 'has-error col-sm-6 form-group biography-group'
           }); //end attr
         } else {
           $('.biography-group .help-block').text('');
           $('.biography-group').attr({
-            class: 'col-sm-4 form-group biography-group'
+            class: 'col-sm-6 form-group biography-group'
           }); //end attr
         }
 
@@ -97,12 +97,12 @@ $(document).ready(function(){
         if($('#password').val().length == 0) {
           $('.password-group .help-block').text('Please enter your password.');
           $('.password-group').attr({
-            class: 'has-error col-sm-4 form-group password-group'
+            class: 'has-error col-sm-6 form-group password-group'
           }); //end attr
         } else {
           $('.password-group .help-block').text('');
           $('.password-group').attr({
-            class: 'col-sm-4 form-group password-group'
+            class: 'col-sm-6 form-group password-group'
           }); //end attr
         }
 
