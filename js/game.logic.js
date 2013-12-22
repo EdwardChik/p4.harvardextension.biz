@@ -46,9 +46,9 @@ $(document).ready(function() {
 
 			$('#select-mario').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-mario" disabled="disabled">' + message + '</button>');
 
-			alert(click['mario']);
+			alert(clicked['mario']);
 
-			if (click['mario'] == "wrong") {
+			if (clicked['mario'] == "wrong") {
 				$("#character-select-mario").delay(1000).slideUp("slow");
 			}
 
@@ -72,9 +72,9 @@ $(document).ready(function() {
 
 			$('#select-link').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-link" disabled="disabled">' + message + '</button>');
 
-			alert(click['link']);
+			alert(clicked['link']);
 
-			if (click['link'] == "wrong") {
+			if (clicked['link'] == "wrong") {
 				$("#character-select-link").delay(1000).slideUp("slow");
 			}
 
@@ -98,9 +98,9 @@ $(document).ready(function() {
 
 			$('#select-samus').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-samus" disabled="disabled">' + message + '</button>');
 
-			alert(click['samus']);
+			alert(clicked['samus']);
 
-			if (click['samus'] == "wrong") {
+			if (clicked['samus'] == "wrong") {
 				$("#character-select-samus").delay(1000).slideUp("slow");
 			}
 
@@ -124,9 +124,9 @@ $(document).ready(function() {
 
 			$('#select-dk').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-dk" disabled="disabled">' + message + '</button>');
 
-			alert(click['dk']);
+			alert(clicked['dk']);
 
-			if (click['dk'] == "wrong") {
+			if (clicked['dk'] == "wrong") {
 				$("#character-select-dk").delay(1000).slideUp("slow");
 			}
 
@@ -150,9 +150,9 @@ $(document).ready(function() {
 
 			$('#select-fox').replaceWith('<button type="button" class="btn btn-' + button_colour + '" id="select-fox" disabled="disabled">' + message + '</button>');
 
-			alert(click['fox']);
+			alert(clicked['fox']);
 
-			if (click['fox'] == "wrong") {
+			if (clicked['fox'] == "wrong") {
 				$("#character-select-fox").delay(1000).slideUp("slow");
 			}
 
@@ -182,7 +182,7 @@ $(document).ready(function() {
 	function initializeGame() {
 
 		// resets scoreboard
-		scoreboard = 5;
+		scoreboard = 100;
 
 		// creates game series array and assigns base values
 		series[0] = "Mario";
@@ -214,7 +214,7 @@ $(document).ready(function() {
 	function disableButtons() {
 
 		// sets variable with message for disabled / not selected buttons
-		var message = "Not selected.";
+		var message = "Game over.";
 
 		// update all buttons that have not been clicked yet
 		for(var index in clicked) {
@@ -231,7 +231,7 @@ $(document).ready(function() {
 	// decreases current score by 1
 	function decreaseScore() {
 
-		scoreboard--;
+		scoreboard = scoreboard - 20;
 
 		// updates scoreboard element
 		$('#scoreboard').replaceWith('<div id="scoreboard">Hearts: ' + scoreboard + '</div>');

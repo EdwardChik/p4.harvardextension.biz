@@ -1,13 +1,16 @@
-<p>Welcome<?php if($user) echo ', '.$user->first_name.' '.$user->last_name; ?>! Here is an overview of what Woof Woof Woof has to offer:</p>
+<p>Welcome<?php if($user) echo ', '.$user->first_name.' '.$user->last_name; ?>! Here is an overview of what Woof Gaming has to offer:</p>
 
-<p>Also, features from the previous messaging framework:</p>
+<h3>Please now that this site is best experienced in Google Chrome version 31, running on a Windows Vista or 7 operating system.</h3>
+
+<p>Here are the new features added in the evolution to Woof Gaming:</p>
 
 <ol>
 	<li>Improved version of game from P3</li>
 	<li>Leaderboards</li>
 	<li>jQuery validation of all forms (sign up, login and post)</li>
 	<li></li>
-	<li>Automatic logs user in after successful signup</li>
+	<li>User is automatically signed in after a successful signup</li>
+	<li>User can change password</li>
 </ol>
 
 <p>Also, features from the previous messaging framework:</p>
