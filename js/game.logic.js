@@ -33,12 +33,12 @@ $(document).ready(function() {
 
 			// sets flags based on match with randomly selected character
 			if (selected == 'Mario') {
-  				message = "1UP for you!";
+  				message = "1UP!";
   				button_colour = "success";
 				clicked['mario'] = "right";
 				disableButtons();
   			} else {
-  				message = "Sorry, not Mario.";
+  				message = "Not Mario.";
   				button_colour = "danger";
 				clicked['mario'] = "wrong";
 				decreaseScore();
@@ -59,12 +59,12 @@ $(document).ready(function() {
 
 			// sets flags based on match with randomly selected character
 			if (selected == 'Link') {
-  				message = "Extra heart!";
+  				message = "Heart +1!";
   				button_colour = "success";
   				clicked['link'] = "right";
 				disableButtons();
   			} else {
-  				message = "Sorry, not Link.";
+  				message = "Not Link.";
   				button_colour = "danger";
   				clicked['link'] = "wrong";
   				decreaseScore();
@@ -85,12 +85,12 @@ $(document).ready(function() {
 
 			// sets flags based on match with randomly selected character
 			if (selected == 'Samus') {
-  				message = "Hyper beam found!";
+  				message = "Hyper beam!";
   				button_colour = "success";
   				clicked['samus'] = "right";
 				disableButtons();
   			} else {
-  				message = "Sorry, not Samus.";
+  				message = "Not Samus.";
   				button_colour = "danger";
   				clicked['samus'] = "wrong";
   				decreaseScore();
@@ -111,12 +111,12 @@ $(document).ready(function() {
 
 			// sets flags based on match with randomly selected character
 			if (selected == 'DK') {
-  				message = "Bananas for all!";
+  				message = "Bananas!";
   				button_colour = "success";
   				clicked['dk'] = "right";
 				disableButtons();
   			} else {
-  				message = "Sorry, not DK.";
+  				message = "Not DK.";
   				button_colour = "danger";
   				clicked['dk'] = "wrong";
   				decreaseScore();
@@ -137,12 +137,12 @@ $(document).ready(function() {
 
 			// sets flags based on match with randomly selected character
 			if (selected == 'Fox') {
-  				message = "Do a barrel roll!";
+  				message = "Barrel roll!";
   				button_colour = "success";
   				clicked['fox'] = "right";
 				disableButtons();
   			} else {
-  				message = "Sorry, not Fox.";
+  				message = "Not Fox.";
   				button_colour = "danger";
   				clicked['fox'] = "wrong";
   				decreaseScore();

@@ -5,9 +5,9 @@
 <ol>
 	<li>Improved version of game from P3</li>
 	<li>Leaderboards</li>
-	<li>jQuery validation of form</li>
+	<li>jQuery validation of all forms (sign up, login and post)</li>
 	<li></li>
-	<li>Automatic login after signing up</li>
+	<li>Automatic logs user in after successful signup</li>
 </ol>
 
 <p>Also, features from the previous messaging framework:</p>

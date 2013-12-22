@@ -5,7 +5,7 @@ $(document).ready(function(){
   		$('login_email').focusout(function(){
 
   			if($('#login_email').val().length == 0) {
-  				$('.login-email-group .help-block').text('Please enter your e-mail address.');
+  				$('.login-email-group .help-block').text('Please enter your e-mail.');
   				$('.login-email-group').attr({
   					class: 'has-error col-sm-6 form-group login-email-group'
   				}); //end attr

@@ -1,0 +1,11 @@
+2013-12-22 0:02:34 - INFO --> -------------------------- 
+2013-12-22 0:02:34 - INFO --> Controller/Method: users/p_signup 
+2013-12-22 0:02:34 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-12-22 0:02:34 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-12-22 0:02:34 - INFO --> CC:  
+2013-12-22 0:02:34 - INFO --> BCC:  
+2013-12-22 0:02:34 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-12-22 0:02:34 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SET last_login = NULL WHERE user_id =  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT user_id
+            FROM users 
+            WHER 
+2013-12-22 0:02:34 - INFO --> FAILED TO SEND EMAIL 

@@ -38,9 +38,9 @@ $(document).ready(function(){
 
 
   // highlights e-mail address field if it is left empty
-  		$('#email_address').focusout(function(){
+  		$('#email').focusout(function(){
 
-  			if($('#email_address').val().length == 0) {
+  			if($('#email').val().length == 0) {
   				$('.email-group .help-block').text('Please enter your e-mail address.');
   				$('.email-group').attr({
   					class: 'has-error col-sm-6 form-group email-group'

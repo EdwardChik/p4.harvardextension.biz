@@ -26,25 +26,25 @@ class users_controller extends base_controller {
         # checks if entered e-mail address already exists in users table
         $q = "SELECT user_id
             FROM users 
-            WHERE email = '".$_POST['email_address']."'";            
+            WHERE email = '".$_POST['email']."'";            
 
         # Sanitizes the user entered data to prevent attacks (such as SQL injection)    
         $user_id = DB::instance(DB_NAME)->select_row($q);
     
-        print_r($_POST);
+        file_put_contents('debug.txt', print_r($_REQUEST, TRUE));
 
         # If we don't have a user_id match, that means this e-mail address is available
         if(!$user_id) {
 
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
-            $email_ = $_POST['email_address'];
+            $email = $_POST['email'];
             $location = $_POST['location'];
             $biography = $_POST['biography'];
             $password = $_POST['password'];
 
             # validation of form completion
-            if(!$first_name || !$last_name || !$email_address || !$location || !$biography || !$password) {
+            if(!$first_name || !$last_name || !$email || !$location || !$biography || !$password) {
 
                 # Send user back to the signup page
                 Router::redirect("/users/signup/error");
@@ -59,7 +59,7 @@ class users_controller extends base_controller {
                 $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);            
 
                 # Create an encrypted token via their email address and a random string
-                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email_address'].Utils::generate_random_string());
+                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
                 # Create an encrypted verification token via their email address and a random string
                 # $_POST['email_verify'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
@@ -79,6 +79,14 @@ class users_controller extends base_controller {
 
                 # Do the insert
                 DB::instance(DB_NAME)->insert('users_users', $data);
+
+
+
+                # logs user in automatically
+                setcookie("token", $_POST['token'], strtotime('+1 year'), '/');
+
+                # Send them to the main page - or wherever you want them to go
+                Router::redirect("/");
 
 
                 # Build a multi-dimension array of recipients of this email

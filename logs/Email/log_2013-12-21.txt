@@ -1,0 +1,9 @@
+2013-12-21 22:51:38 - INFO --> -------------------------- 
+2013-12-21 22:51:38 - INFO --> Controller/Method: users/p_signup 
+2013-12-21 22:51:38 - INFO --> From: Woof Woof Woof (woofbot5000@gmail.com) 
+2013-12-21 22:51:38 - INFO --> To: Woof Woof Woof (woofbot5000@gmail.com),  
+2013-12-21 22:51:38 - INFO --> CC:  
+2013-12-21 22:51:38 - INFO --> BCC:  
+2013-12-21 22:51:38 - INFO --> Subject: Woof Woof Woof SQL Error 
+2013-12-21 22:51:38 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO users SET first_name = 'testing', last_name = 'testing', email_address = 'testing@testing.com', location = 'testing', biography = 'testing', password = 'e23ff40bda3d9fe00d102b8db63195cac9122803', created = '1387684298', modified = '1387684298', token = '4131358635fdcc8 
+2013-12-21 22:51:38 - INFO --> FAILED TO SEND EMAIL 
