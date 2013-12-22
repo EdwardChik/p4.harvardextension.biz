@@ -1,11 +1,13 @@
 <?php
 class users_controller extends base_controller {
 
+    # displays the default index page
     public function index() {
         echo "This is the index page";
     }
 
 
+    # loads signup page for a new user
     public function signup($error = NULL) {
         # Setup view
             $this->template->content = View::instance('v_users_signup');
@@ -19,6 +21,7 @@ class users_controller extends base_controller {
     }
 
 
+    # creates new user
     public function p_signup() {
         # checks if entered e-mail address already exists in users table
         $q = "SELECT user_id
@@ -28,6 +31,8 @@ class users_controller extends base_controller {
         # Sanitizes the user entered data to prevent attacks (such as SQL injection)    
         $user_id = DB::instance(DB_NAME)->select_row($q);
     
+        print_r($_POST);
+
         # If we don't have a user_id match, that means this e-mail address is available
         if(!$user_id) {
 
@@ -165,7 +170,7 @@ class users_controller extends base_controller {
 
 
 
-
+    # logs the user into the app
     public function login($error = NULL) {
         # Set up the view
         $this->template->content = View::instance("v_users_login");
@@ -179,6 +184,7 @@ class users_controller extends base_controller {
     }
 
 
+    # authenticates login details against the database
     public function p_login() {
         # Sanitize the user entered data to prevent any funny-business (re: SQL Injection Attacks)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
@@ -242,7 +248,7 @@ class users_controller extends base_controller {
                 # update the last_login time for the user
                 $update = DB::instance(DB_NAME)->update_row('users', Array("last_login" => $current_time), "WHERE user_id = ".$user_id);
 
-                # Send them to the main page - or wherver you want them to go
+                # Send them to the main page - or wherever you want them to go
                 Router::redirect("/");
 
             }
@@ -250,6 +256,7 @@ class users_controller extends base_controller {
     }
 
 
+    # logs user out of the app
     public function logout() {
         # Generate and save a new token for next login
         $new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
@@ -269,6 +276,7 @@ class users_controller extends base_controller {
     }
 
 
+    # displays the user's profile
     public function profile() {
         # If user is blank, they're not logged in; redirect them to the login page
         if(!$this->user) {
@@ -286,6 +294,7 @@ class users_controller extends base_controller {
     }
 
 
+    # allows users to change profile details
     public function profile_edit() {
         # Sanitize the user entered data to prevent any funny-business (re: SQL Injection Attacks)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
@@ -302,6 +311,7 @@ class users_controller extends base_controller {
     }
 
 
+    # allows user to reset their password
     public function reset() {
         # Setup view
             $this->template->content = View::instance('v_users_reset');
@@ -312,6 +322,7 @@ class users_controller extends base_controller {
     }
 
 
+    # resets password in users database
     public function p_reset() {
         # Sanitize the user entered data to prevent any funny-business (re: SQL Injection Attacks)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
@@ -357,6 +368,7 @@ class users_controller extends base_controller {
 
         }
     }
+
 
     # loads game for players
     public function game($error = NULL) {
