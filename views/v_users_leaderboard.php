@@ -6,7 +6,6 @@
             <th>Location</th>
             <th>Posts</th>
             <th>Games Played</th>
-            <th>Average HP Left</th>
         </tr>
     </thead>
     <tbody>
@@ -25,8 +24,6 @@
 	            <td><?=$user['post_total']?></td>
 	            <!-- user location -->
 	            <td><?=$user['games_played']?></td>
-	            <!-- user average HP left after game -->
-	            <td><?=round($average_hp, 2)?></td>
 	        </tr>
 
 		<?php endforeach; ?>
