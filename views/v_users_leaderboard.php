@@ -7,7 +7,6 @@
             <th>Posts</th>
             <th>Games Played</th>
             <th>Average HP Left</th>
-            <th>Following?</th>
         </tr>
     </thead>
     <tbody>
@@ -28,17 +27,6 @@
 	            <td><?=$user['games_played']?></td>
 	            <!-- user average HP left after game -->
 	            <td><?=round($average_hp, 2)?></td>
-	            <!-- user follow status -->
-	            <td>
-		            <!-- If there exists a connection with this user, show a unfollow link -->
-		            <?php if(isset($connections[$user['user_id']])): ?>
-		                <a href='/posts/unfollow/<?=$user['user_id']?>'>Unfollow</a>
-
-		            <!-- Otherwise, show the follow link -->
-		            <?php else: ?>
-		                <a href='/posts/follow/<?=$user['user_id']?>'>Follow</a>
-		            <?php endif; ?>
-	            </td>
 	        </tr>
 
 		<?php endforeach; ?>
