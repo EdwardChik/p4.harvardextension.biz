@@ -278,6 +278,16 @@ $(document).ready(function() {
 	} // end audio initialization function
 
 
+	// updates score in database for leaderboard retrieval
+	function updateScore() {
+
+		alert("Hello");
+
+		document.location.href = '/users/addScore';
+		
+	}	// end update score function
+
+
 	// function to update all buttons upon click
 	function disableButtons() {
 
@@ -290,10 +300,9 @@ $(document).ready(function() {
 			if (clicked[index] == "ready") {
 				$('#select-' + index).replaceWith('<button type="button" class="btn btn-primary" id="select-' + index + '" disabled="disabled">' + message + '</button>');
 			}
-
-			updateScore();
-
 		}
+
+		updateScore();
 
 	} // end disable buttons function
 
@@ -317,15 +326,5 @@ $(document).ready(function() {
 		$('#health_bar').replaceWith('<div class="progress-bar progress-bar-' + bar_type + '" role="progressbar" aria-valuenow="' + scoreboard + '"aria-valuemin="0" aria-valuemax="100" style="width: ' + scoreboard + '%" id="health_bar"><span class="sr-only">' + scoreboard + '% Health</span></div>');
 
 	} // end decrease score function
-
-
-	// updates score in database for leaderboard retrieval
-	function updateScore() {
-
-		$.ajax({
-			url: "/users/score"
-		});
-		
-	}
 
 }); //end ready

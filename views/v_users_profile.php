@@ -1,5 +1,5 @@
 <!-- profile page for logged in user -->
-<h1>This is the profile of <?=$user->first_name?> <?=$user->last_name?>. (<a href="/users/reset">change password</a>)</h1>
+<h1>This is the profile of <?=$user->first_name?> (<a href="/users/reset">change password</a>)</h1>
 
 <!-- profile page data points are all pre-populated in fields, for immediate access to editing -->
 <form method='POST' action='/users/profile_edit'>

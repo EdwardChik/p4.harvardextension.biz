@@ -355,26 +355,18 @@ class users_controller extends base_controller {
 
 
     # updates score for players
-    public function score() {
+    public function addScore() {
 
-        # Build the query to get all the users
-        $q = "SELECT *
-            FROM users";
+        # locates games played for the logged in user
+        $games_played = "SELECT games_played
+            FROM users 
+            WHERE user_id = '.$this->user->user_id";
 
-        # Execute the query to get all the users. 
-        # Store the result array in the variable $users
-        $users = DB::instance(DB_NAME)->select_rows($q);
+        # increases user tally of games played
+        $games_played++;
 
-                # locates user_id for row in users that matched authorization token
-                $user = "SELECT user_id
-                    FROM users 
-                    WHERE email = '".$_POST['login_email']."' 
-                    AND password = '".$_POST['login_password']."'";
-
-                $user_id = DB::instance(DB_NAME)->select_field($user);    
-
-                # update the last_login time for the user
-                $update = DB::instance(DB_NAME)->update_row('users', Array("last_login" => $current_time), "WHERE user_id = ".$user_id);
+        # update the last_login time for the user
+        $update = DB::instance(DB_NAME)->update_row('users', Array("games_played" => $games_played), "WHERE user_id = ".$user_id);
 
         # Send them back to the game page
         Router::redirect("/users/game");
