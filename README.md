@@ -21,10 +21,8 @@ The following is also described on the main page of the app, but here is what ha
 - Game: Streamlined selection list (different Bootstrap element) + fade out animation (jQuery)
 - Game: New health bar graphic and animation, which decreases after each incorrect guess + changes colour based on threshold
 - Game: Leaderboards! This consists of tracking more data (SQL), updating the stats after each game session and creating a leaderboard page to display collated results (PHP)
-
 - User Experience: User is automatically signed in after a successful signup, cookie is created during user creation process
 - User Experience: User can change password, requires authentication against current password
-
 - Validation: jQuery validation of all forms including sign up, login and post
 - Validation: User cannot post a blank message, checked with server side validation
 

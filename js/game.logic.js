@@ -291,6 +291,8 @@ $(document).ready(function() {
 				$('#select-' + index).replaceWith('<button type="button" class="btn btn-primary" id="select-' + index + '" disabled="disabled">' + message + '</button>');
 			}
 
+			updateScore();
+
 		}
 
 	} // end disable buttons function
