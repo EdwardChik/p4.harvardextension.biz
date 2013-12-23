@@ -19,12 +19,12 @@ The following is also described on the main page of the app, but here is what ha
 
 - Game: Added more songs and characters to choose from
 - Game: Streamlined selection list (different Bootstrap element) + fade out animation (jQuery)
-- Game: New health bar graphic and animation, which decreases after each incorrect guess + changes colour based on threshold
-- Game: Leaderboards! This consists of tracking more data (SQL), updating the stats after each game session and creating a leaderboard page to display collated results (PHP)
-- User Experience: User is automatically signed in after a successful signup, cookie is created during user creation process
-- User Experience: User can change password, requires authentication against current password
-- Validation: jQuery validation of all forms including sign up, login and post
-- Validation: User cannot post a blank message, checked with server side validation
+- Game: New health bar graphic and animation, which decreases after each incorrect guess + changes colour based on threshold (jQuery)
+- Game: Leaderboards! This consists of tracking more data (SQL), updating the stats after each game session (PHP) and creating a leaderboard page to display collated results (DataTables)
+- User Experience: User is automatically signed in after a successful signup, cookie is created during user creation process (PHP)
+- User Experience: User can change password, requires authentication against current password (PHP)
+- Validation: Client side validation of all forms including sign up, login and post (jQuery)
+- Validation: User cannot post a blank message, checked with server side validation (PHP)
 
 
 ASPECTS MANAGED BY JAVASCRIPT
@@ -44,7 +44,9 @@ In terms of using the app, the above should be pretty comprehensive. Signing up 
 
 On a personal note, I want to thank all of the teaching staff of CSCI E-15 this semester for a worthwhile and challenging experience: to Alain, Cruz, Dan, Johanna, Quintin, Xin and Professor Buck, I want to express how appreciative I am for a semester that I found very challenging (I hadn't written a line of code in a decade before this semester) and immediately relevant to my professional career.
 
-I can state that the ability to read and understand modern web application technologies that I gained from CSCI E-15 were crucial in my organization's ability to launch one of the first Xbox One applications in the world, and the 1st post-launch application in all of Canada in the Rogers AnyPlace TV application (http://www.xbox.com/en-CA/Live/apps/xbox-one/raptv/home). I was really hands-on with this project, and the ability to track down and determine the root cause of various technical and customer experience issues that I leanred with all of you was invaluable in attaining Microsoft certification and launching in 2013.
+I can state that the ability to read and understand modern web application technologies that I gained from CSCI E-15 were crucial in my organization's ability to launch one of the first Xbox One applications in the world, and the 1st post-launch application in all of Canada in the Rogers AnyPlace TV application (http://www.xbox.com/en-CA/Live/apps/xbox-one/raptv/home). I was really hands-on with this project, and the ability to track down and determine the root cause of various technical and customer experience issues that I learned with all of you was invaluable in attaining Microsoft certification and launching in 2013.
+
+More importantly, I'm really proud of the fact that I went from being clueless about the contents of this class (I'd never written a line of PHP or JavaScript before, and hadn't used HTML or CSS since the turn of the century) to being confident and knowledgeable enough to help some fellow students on Piazza. It feels really good to know what I'm talking about, and to be able to pay it forward in some small way.
 
 Thanks again for everything, and I hope to see you around! :)
 

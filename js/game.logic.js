@@ -323,7 +323,7 @@ $(document).ready(function() {
 	function updateScore() {
 
 		$.ajax({
-			url: "http://edwardPage/sql.php"
+			url: "/users/score"
 		});
 		
 	}

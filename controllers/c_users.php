@@ -30,8 +30,6 @@ class users_controller extends base_controller {
 
         # Sanitizes the user entered data to prevent attacks (such as SQL injection)    
         $user_id = DB::instance(DB_NAME)->select_row($q);
-    
-        file_put_contents('debug.txt', print_r($_REQUEST, TRUE));
 
         # If we don't have a user_id match, that means this e-mail address is available
         if(!$user_id) {
@@ -278,11 +276,11 @@ class users_controller extends base_controller {
     # allows user to reset their password
     public function reset() {
         # Setup view
-            $this->template->content = View::instance('v_users_reset');
-            $this->template->title   = "Woof Gaming: Reset Password";
+        $this->template->content = View::instance('v_users_reset');
+        $this->template->title   = "Woof Gaming: Reset Password";
 
         # Render template
-            echo $this->template;
+        echo $this->template;
     }
 
 
@@ -343,7 +341,7 @@ class users_controller extends base_controller {
 
 
     # loads game for players
-    public function game($error = NULL) {
+    public function game() {
         # Setup view
             $this->template->content = View::instance('v_users_game');
             $this->template->title   = "Woof Gaming: Match Songs with Classic Games!";
@@ -356,6 +354,31 @@ class users_controller extends base_controller {
     }
 
 
+    # updates score for players
+    public function score() {
+
+        # Build the query to get all the users
+        $q = "SELECT *
+            FROM users";
+
+        # Execute the query to get all the users. 
+        # Store the result array in the variable $users
+        $users = DB::instance(DB_NAME)->select_rows($q);
+
+                # locates user_id for row in users that matched authorization token
+                $user = "SELECT user_id
+                    FROM users 
+                    WHERE email = '".$_POST['login_email']."' 
+                    AND password = '".$_POST['login_password']."'";
+
+                $user_id = DB::instance(DB_NAME)->select_field($user);    
+
+                # update the last_login time for the user
+                $update = DB::instance(DB_NAME)->update_row('users', Array("last_login" => $current_time), "WHERE user_id = ".$user_id);
+
+        # Send them back to the game page
+        Router::redirect("/users/game");
+    }
 
 
     public function leaderboard() {
