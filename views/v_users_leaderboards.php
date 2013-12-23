@@ -1,3 +1,6 @@
+<?=ini_set('error_reporting', E_ALL);
+ini_set('display_errors',true);?>
+
 <!-- HTML5 table structure to populate with leaderboard data -->
 <table id="leaderboard">
     <thead>
@@ -15,7 +18,9 @@
 		<!-- loops through users database to display each one, and generating an HTML5 table to apply the DataTables plugin onto -->
 		<?php foreach($users as $user): ?>
 
-			<?php if ($user['games_played'] != 0) { $average_hp = $user['hp_remaining'] / $user['games_played']; } ?>
+			<?=file_put_contents('debug.txt', print_r($user))?>
+
+			<?=$average_hp = $user['hp_remaining'] / $user['games_played']?>
 
 	        <tr>
 	            <!-- user name -->

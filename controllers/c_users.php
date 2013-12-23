@@ -356,17 +356,28 @@ class users_controller extends base_controller {
     }
 
 
-    # loads leaderboard for top scores
-    public function leaderboard($error = NULL) {
-        # Setup view
-            $this->template->content = View::instance('v_users_leaderboard');
-            $this->template->title   = "Woof Gaming: Classic Games Leaderboard!";
 
-            # Pass data to the view
-            $this->template->content->error = $error;
 
-        # Render template
-            echo $this->template;
+    public function leaderboard() {
+
+        # Set up the View
+        $this->template->content = View::instance('v_users_leaderboard');
+        $this->template->title   = "Woof Gaming: Classic Games Leaderboard!";
+
+        # Build the query to get all the users
+        $q = "SELECT *
+            FROM users";
+
+        # Execute the query to get all the users. 
+        # Store the result array in the variable $users
+        $users = DB::instance(DB_NAME)->select_rows($q);
+
+        # Pass data (users and connections) to the view
+        $this->template->content->users       = $users;
+        $this->template->content->connections = $connections;
+
+        # Render the view
+        echo $this->template;
     }
 
 
