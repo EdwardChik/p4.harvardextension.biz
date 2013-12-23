@@ -318,4 +318,14 @@ $(document).ready(function() {
 
 	} // end decrease score function
 
+
+	// updates score in database for leaderboard retrieval
+	function updateScore() {
+
+		$.ajax({
+			url: "http://edwardPage/sql.php"
+		});
+		
+	}
+
 }); //end ready

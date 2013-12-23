@@ -31,7 +31,7 @@ A email designated to receive messages from the server. Examples:
 	define('SYSTEM_EMAIL', 'woofbot5000@gmail.com'); 
 
 # Default DB name for this app
-	define('DB_NAME', "harvarde_p2_harvardextension_biz"); 
+	define('DB_NAME', "harvarde_p4_harvardextension_biz"); 
 
 # Timezone
 	define('TIMEZONE', 'America/Toronto');

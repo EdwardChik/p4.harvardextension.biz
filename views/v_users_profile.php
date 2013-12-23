@@ -1,5 +1,5 @@
 <!-- profile page for logged in user -->
-<h1>This is the profile of <?=$user->first_name?> <?=$user->last_name?>.</h1>
+<h1>This is the profile of <?=$user->first_name?> <?=$user->last_name?>. (<a href="/users/reset">change password</a>)</h1>
 
 <!-- profile page data points are all pre-populated in fields, for immediate access to editing -->
 <form method='POST' action='/users/profile_edit'>
@@ -42,9 +42,11 @@
     </div>
 
     <div class="row extra-space-bottom">
-        <div class="col-sm-2 form-group">
+
+        <div class="col-sm-6 form-group">
             <button type="submit" class="btn btn-default navbar-btn">Edit Profile</button>
         </div>
+
     </div>
 
     <!-- displays a message if there is an error in the profile editing process -->
