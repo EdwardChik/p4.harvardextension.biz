@@ -13,9 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    <!-- DataTables plugin and stylesheet -->
-    <script type="text/javascript" charset="utf-8" src="/datatables/media/js/jquery.dataTables.js"></script>
-
+    <!-- DataTables stylesheet -->
     <style type="text/css" title="currentStyle">
         @import "/datatables/media/css/demo_table.css";
     </style>
@@ -127,6 +125,9 @@
     <script src="/js/validation.login.js"></script>
     <script src="/js/validation.post.js"></script>
     <script src="/js/validation.password.js"></script>
+
+    <!-- DataTables call -->
+    <script type="text/javascript" charset="utf-8" src="/datatables/media/js/jquery.dataTables.js"></script>
 
     <!-- DataTables call logic -->
     <script src="/js/datatables.logic.js"></script>

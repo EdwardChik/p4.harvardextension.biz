@@ -1,5 +1,5 @@
 <!-- HTML5 table structure to populate with leaderboard data -->
-<table id="leaderboard">
+<table id="leaderboard" class="display">
     <thead>
         <tr>
             <th>User</th>
