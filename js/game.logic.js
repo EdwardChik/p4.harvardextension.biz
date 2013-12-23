@@ -281,8 +281,6 @@ $(document).ready(function() {
 	// updates score in database for leaderboard retrieval
 	function updateScore() {
 
-		alert("Hello");
-
 		document.location.href = '/users/addScore';
 		
 	}	// end update score function
