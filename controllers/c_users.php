@@ -11,7 +11,7 @@ class users_controller extends base_controller {
     public function signup($error = NULL) {
         # Setup view
             $this->template->content = View::instance('v_users_signup');
-            $this->template->title   = "Sign Up for Woof Woof Woof";
+            $this->template->title   = "Woof Gaming: Sign Up";
 
             # Pass data to the view
             $this->template->content->error = $error;
@@ -119,70 +119,11 @@ class users_controller extends base_controller {
     }
 
 
-
-
-/*    public function signup_verify() {
-        # Setup view
-            $this->template->content = View::instance('v_users_signup_verify');
-            $this->template->title   = "Verify Account for Woof Woof Woof";
-
-        # Render template
-            echo $this->template;
-    }
-
-    public function p_signup_verify() {
-        # checks if entered e-mail address already exists in users table
-        $q = "SELECT user_id
-            FROM users
-            WHERE email_verify = ".$_POST['email_verify'];
-
-        # Sanitizes the user entered data to prevent attacks (such as SQL injection)    
-        $user_id = DB::instance(DB_NAME)->select_row($q);
-    
-        # If there is a user_id match, set the account status to active
-        if($user_id) {
-
-            $where_condition = "WHERE user_id = ".$user_id;
-
-            # update the account status time for the user
-            DB::instance(DB_NAME)->update_row('users', Array("status" => "active"), $where_condition);
-
-
-            # Build a multi-dimension array of recipients of this email
-            $to[] = Array("name" => $this->user->first_name." ".$this->user->last_name, "email" => $this->user->email);
-
-            # Build a single-dimension array of who this email is coming from
-            # note it's using the constants we set in the configuration above)
-            $from = Array("name" => APP_NAME, "email" => APP_EMAIL);
-
-            # Subject
-            $subject = "Your Woof Woof Woof Account is Verified!";
-
-            # You can set the body as just a string of text
-            $body = "Hi ".$_POST['first_name']." ".$_POST['last_name'].", thank you for verifying your account with Woof Woof Woof! We are thrilled to have you with us, go ahead and start woofing with your friends!"];
-
-            # With everything set, send the email
-            $email = Email::send($to, $from, $subject, $body, true); 
-
-            # Send them to the main page - or wherver you want them to go
-            Router::redirect("/");
-
-        } else {
-            echo "This verification code was not found.";
-
-            # Send them back to the signup page
-            Router::redirect("/users/signup");
-        }
-
-    } */
-
-
-
     # logs the user into the app
     public function login($error = NULL) {
         # Set up the view
         $this->template->content = View::instance("v_users_login");
-        $this->template->title   = "Login to Woof Woof Woof";
+        $this->template->title   = "Woof Gaming: Login";
 
         # Pass data to the view
         $this->template->content->error = $error;
@@ -295,7 +236,7 @@ class users_controller extends base_controller {
 
         # Setup view
         $this->template->content = View::instance('v_users_profile');
-        $this->template->title   = "Profile for ".$this->user->first_name;
+        $this->template->title   = "Woof Gaming: Profile for ".$this->user->first_name;
 
         # Render template
         echo $this->template;
@@ -338,7 +279,7 @@ class users_controller extends base_controller {
     public function reset() {
         # Setup view
             $this->template->content = View::instance('v_users_reset');
-            $this->template->title   = "Reset Password for Woof Woof Woof";
+            $this->template->title   = "Woof Gaming: Reset Password";
 
         # Render template
             echo $this->template;
@@ -350,45 +291,53 @@ class users_controller extends base_controller {
         # Sanitize the user entered data to prevent any funny-business (re: SQL Injection Attacks)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
+        # Encrypt the password  
+        $hashed_password = sha1(PASSWORD_SALT.$_POST['password']);
+
         # Search the db for this email
         $q = "SELECT user_id 
             FROM users 
-            WHERE email = '".$_POST['email']."'";
+            WHERE email = '".$_POST['email']."'
+            AND password = '".$hashed_password."'";
         
         $user_id = DB::instance(DB_NAME)->select_field($q);
         
         # False will indicate a user was not found for this email
-        if(!$user_id) {
+        if(!$user_id || ($_POST['password'] != $_POST['password_confirm']) || ($_POST['new_password'] != $_POST['new_password_confirm'])) {
 
             # Send them back to the password reset page
-            Router::redirect("/users/reset");
+            Router::redirect("/users/reset/error");
+
         } else {
 
-            # Generate a new password; this is what we'll send in the email
-            $new_password = Utils::generate_random_string();
-
             # Encrypt the password  
-            $hashed_password = sha1(PASSWORD_SALT.$new_password);     
+            $hashed_new_password = sha1(PASSWORD_SALT.$_POST['new_password']);
 
             # store current time
             $current_time = Time::now();
             
             # Update database with new hashed password
-            $update = DB::instance(DB_NAME)->update('users', Array("password" => $hashed_password, "modified" => $current_time), "WHERE user_id = ".$user_id);
+            $update = DB::instance(DB_NAME)->update('users', Array("password" => $hashed_new_password, "modified" => $current_time), "WHERE user_id = ".$user_id);
 
             # Success
             if($update) {
-                # return $new_password;
+
+                # Create an encrypted token via their email address and a random string
+                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+
+                # creates replacement cookie for user
+                setcookie("token", $_POST['token'], strtotime('+1 year'), '/');
 
                 # Send them to the main page - or wherver you want them to go
-                Router::redirect("/");
+                Router::redirect("/users/profile");
 
                 # For now, just confirm they've signed up - 
                 # You should eventually make a proper View for this
                 echo "Your password has been changed to " . $new_password;
-            } else 
-                return false;
 
+            } else  {           
+                return false;
+            }
         }
     }
 
@@ -397,7 +346,7 @@ class users_controller extends base_controller {
     public function game($error = NULL) {
         # Setup view
             $this->template->content = View::instance('v_users_game');
-            $this->template->title   = "Match Songs with Classic Games!";
+            $this->template->title   = "Woof Gaming: Match Songs with Classic Games!";
 
             # Pass data to the view
             $this->template->content->error = $error;
@@ -411,7 +360,7 @@ class users_controller extends base_controller {
     public function leaderboard($error = NULL) {
         # Setup view
             $this->template->content = View::instance('v_users_leaderboard');
-            $this->template->title   = "Classic Games Leaderboard!";
+            $this->template->title   = "Woof Gaming: Classic Games Leaderboard!";
 
             # Pass data to the view
             $this->template->content->error = $error;
