@@ -126,6 +126,7 @@
     <script src="/js/validation.signup.js"></script>
     <script src="/js/validation.login.js"></script>
     <script src="/js/validation.post.js"></script>
+    <script src="/js/validation.password.js"></script>
 
     <!-- DataTables call logic -->
     <script src="/js/datatables.logic.js"></script>

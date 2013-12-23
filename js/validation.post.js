@@ -2,9 +2,9 @@
 $(document).ready(function(){
 
   // highlights new post field if it is left empty
-  		$('#new_post').focusout(function(){
+  		$('#content').focusout(function(){
 
-  			if($('#new_post').val().length == 0) {
+  			if($('#content').val().length == 0) {
   				$('.new-post-group .help-block').text('Please enter content to post.');
   				$('.new-post-group').attr({
   					class: 'has-error col-sm-6 form-group new-post-group'
